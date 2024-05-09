@@ -7,13 +7,10 @@ body{
 * {box-sizing: border-box;}
 
 .searchbar{
-
+    margin:0;
     position: absolute;
-    width:
+
     height: 126px;
-    left: 0px;
-    top: 0px;
-    
     background: #252525;
 
 }
@@ -21,9 +18,9 @@ body{
 .logo{
 position: absolute;
 width: 328px;
-height: 79px;
-left: 53px;
-top: 28px;
+height: 80px;
+left: 60px;
+top: 24px;
 
 background: url(shoptitle_300x@2x.png);
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -38,7 +35,7 @@ box-sizing: border-box;
 position: absolute;
 width: 512px;
 height: 49px;
-left: 419px;
+left: 470px;
 top: 43px;
 
 background: #FFFFFF;
@@ -51,7 +48,7 @@ border-radius: 2px;
 position: absolute;
 width: 43px;
 height: 43px;
-left: 1000px;
+left: 1100px;
 top: 46px;
 
 background: url(user.png);
@@ -61,7 +58,7 @@ background: url(user.png);
 position: absolute;
 width: 48px;
 height: 49px;
-left: 1083px;
+left: 1200px;
 top: 43px;
 
 }
@@ -71,7 +68,7 @@ top: 43px;
 position: absolute;
 width: 46px;
 height: 46px;
-left: 1171px;
+left: 1300px;
 top: 46px;
 
 background: url(world.png);
@@ -81,7 +78,7 @@ background: url(world.png);
 position: absolute;
 width: 39px;
 height: 35px;
-left: 881px;
+left: 1000px;
 top: 51px;
 
 background: url(image.png), url(image.png), url(image.png), url(image.png), url(image.png);
@@ -89,8 +86,9 @@ background: url(image.png), url(image.png), url(image.png), url(image.png), url(
 }
 
 .navigationbar{
+margin:0;
 position: absolute;
-width: 1300px;
+width: 1433px;
 height: 60px;
 left: 11px;
 top: 126px;
@@ -111,17 +109,63 @@ li{
     color: #FFFFFF;    
     display: inline-block;
     text-align: center;
-    padding: 20px 85px;  
+    padding: 20px 95px;  
 
 }
 
 .banner{
 position: absolute;
-width: 1184px;
-height: 610px;
-left: 48px;
-top: 236px;
+width: 1300px;
+height: 550px;
+left: 123px;
+top: 240px;
 
 background: url(image.png);
+
+}
+
+.contactlogo{
+position: absolute;
+width: 200px;
+height: 200px;
+left: 1240px;
+top: 880px;
+}
+
+.category h3{
+position: absolute;
+width: 224px;
+height: 50px;
+left: 640px;
+top: 860px;
+
+font-family: 'Arbutus';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 50px;
+
+color: #FFFFFF;
+}
+.category img{
+    margin-top: 980px;
+    margin-left: 132px;
+    
+}
+.category ul {
+    margin: 0;
+    top: 1200px;
+    margin-left: 80px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.category li{
+    font-family: 'Inder';
+    font-size: 24px ;
+    margin-right: 57px;
+    color: #FFFFFF;    
+    display: inline-block;
+    text-align: center;
 
 }
