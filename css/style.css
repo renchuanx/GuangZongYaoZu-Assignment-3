@@ -1,1 +1,127 @@
-body{ background-color: aquamarine;}
+body{
+    margin: 0;
+    background-color: #101117;
+}
+
+
+* {box-sizing: border-box;}
+
+.searchbar{
+
+    position: absolute;
+    width:
+    height: 126px;
+    left: 0px;
+    top: 0px;
+    
+    background: #252525;
+
+}
+
+.logo{
+position: absolute;
+width: 328px;
+height: 79px;
+left: 53px;
+top: 28px;
+
+background: url(shoptitle_300x@2x.png);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+
+.searchbar input[type=text]{
+
+box-sizing: border-box;
+
+position: absolute;
+width: 512px;
+height: 49px;
+left: 419px;
+top: 43px;
+
+background: #FFFFFF;
+border: 1px solid #FFFFFF;
+border-radius: 2px;
+
+}
+
+.user{
+position: absolute;
+width: 43px;
+height: 43px;
+left: 1000px;
+top: 46px;
+
+background: url(user.png);
+}
+
+.cart{
+position: absolute;
+width: 48px;
+height: 49px;
+left: 1083px;
+top: 43px;
+
+}
+
+
+.language{
+position: absolute;
+width: 46px;
+height: 46px;
+left: 1171px;
+top: 46px;
+
+background: url(world.png);
+}
+
+.search icon{
+position: absolute;
+width: 39px;
+height: 35px;
+left: 881px;
+top: 51px;
+
+background: url(image.png), url(image.png), url(image.png), url(image.png), url(image.png);
+
+}
+
+.navigationbar{
+position: absolute;
+width: 1300px;
+height: 60px;
+left: 11px;
+top: 126px;
+
+background: #1A1A1A;
+border-radius: 20px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li{
+    font-family: 'Inder';
+    font-size: 24px ;
+    color: #FFFFFF;    
+    display: inline-block;
+    text-align: center;
+    padding: 20px 85px;  
+
+}
+
+.banner{
+position: absolute;
+width: 1184px;
+height: 610px;
+left: 48px;
+top: 236px;
+
+background: url(image.png);
+
+}
