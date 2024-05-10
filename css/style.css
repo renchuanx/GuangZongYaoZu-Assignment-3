@@ -169,3 +169,31 @@ color: #FFFFFF;
     text-align: center;
 
 }
+
+.bestsellers h3{
+    position: absolute;
+    width: 500px;
+    height: 50px;
+    left: 600px;
+    top: 1400px;
+    
+    font-family: 'Arbutus';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    
+    color: #FFFFFF;
+    }
+
+.bestsellers{
+    
+    justify-content: space-around; 
+    align-items: center; 
+    padding: 20px;
+
+}
+.item{
+    margin-top: 1500px;
+    margin-left: 132px;
+}
