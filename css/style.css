@@ -7,7 +7,6 @@ body{
 * {box-sizing: border-box;}
 
 .searchbar{
-    margin:0;
     position: absolute;
 
     height: 126px;
@@ -90,7 +89,7 @@ margin:0;
 position: absolute;
 width: 1433px;
 height: 60px;
-left: 11px;
+left: 15px;
 top: 126px;
 
 background: #1A1A1A;
@@ -106,10 +105,11 @@ ul {
 li{
     font-family: 'Inder';
     font-size: 24px ;
+    margin-left: 10px;
     color: #FFFFFF;    
     display: inline-block;
     text-align: center;
-    padding: 20px 95px;  
+    padding: 16px 90px;  
 
 }
 
@@ -117,7 +117,7 @@ li{
 position: absolute;
 width: 1300px;
 height: 550px;
-left: 123px;
+left: 124px;
 top: 240px;
 
 background: url(image.png);
@@ -148,22 +148,20 @@ line-height: 50px;
 color: #FFFFFF;
 }
 .category img{
-    margin-top: 980px;
-    margin-left: 132px;
+    padding-top: 980px;
+    padding-left: 132px;
     
 }
 .category ul {
-    margin: 0;
     top: 1200px;
     margin-left: 80px;
-    padding: 0;
     overflow: hidden;
 }
 
 .category li{
     font-family: 'Inder';
-    font-size: 24px ;
-    margin-right: 57px;
+    font-size: 26px ;
+    margin-right: 60px;
     color: #FFFFFF;    
     display: inline-block;
     text-align: center;
@@ -175,25 +173,165 @@ color: #FFFFFF;
     width: 500px;
     height: 50px;
     left: 600px;
-    top: 1400px;
+    top: 1320px;
     
     font-family: 'Arbutus';
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
     line-height: 50px;
-    
     color: #FFFFFF;
     }
 
-.bestsellers{
+    .bestsellers {
+        padding-top: 220px;
+        padding-left: 160px;
+        width: 100%;
+  
+        white-space: nowrap;
+    }
     
-    justify-content: space-around; 
-    align-items: center; 
-    padding: 20px;
+    .items-container {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        flex-shrink: 0;
+        margin-top: auto;
+       
+    }
+
+
+    .bestsellers .item {
+        justify-content: space-between;
+        display: inline-block;
+        margin-right:32px;
+        width: 16.625rem;
+        height: 28rem;
+        flex-shrink: 0;
+        background: linear-gradient(180deg, #E6E5E5 0%, #FFFFFF 100%);
+        border-radius: 10px;
+       
+    }
+    
+    
+    .bestsellers .item img { 
+    margin-top:45px;
+    padding-left:18px;
+    width: 15rem;
+    height: 10rem;
+
+    }
+    
+    .item h6 {
+    display:left;
+    margin-top:25px;
+    margin-bottom: 0;
+    padding-left: 15px;
+    font-family: 'Inter';
+    color: #000;
+    font-size: 1.125rem;
+    font-weight: 500;
+    }
+
+    .item .price {
+        display:left;
+        margin-top:70px;
+        padding-left: 15px;
+        color: #3F2A74;
+        font-family: 'Inter', sans-serif;
+        font-size: 1.375rem;
+        font-weight: 800;
+    }
+    
+    .item .stock {
+        margin-top:40px;
+        margin-left: 200px;
+        color: #000;
+        font-family: 'Inter', sans-serif;
+        font-size: 0.75rem;
+        font-weight: 200;
+    }
+
+    .viewall{
+        display: left;
+        margin-top: 50px;
+        padding-left: 712px;
+        color:#FFFFFF;
+        font-family: 'Inter', sans-serif;
+        font-size: 1.25rem;
+        font-weight: 400;
+        text-decoration-line: underline;
+    }
+
+    .FeaturedCollection h3{
+        position: absolute;
+        width: 500px;
+        height: 50px;
+        left: 530px;
+        top: 2000px;
+        
+        font-family: 'Arbutus';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 50px;
+        color: #FFFFFF;
+    }
+
+.FeaturedCollection{
+    padding-top: 200px;
+        padding-left: 160px;
+        width: 100%;
+  
+        white-space: nowrap;
+}
+
+.items-container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-shrink: 0;
+    margin-top: auto;
+   
+}
+
+
+.FeaturedCollection .item {
+    justify-content: space-between;
+    display: inline-block;
+    margin-right:32px;
+    width: 16.625rem;
+    height: 28rem;
+    flex-shrink: 0;
+    background: linear-gradient(180deg, #E6E5E5 0%, #FFFFFF 100%);
+    border-radius: 10px;
+   
+}
+
+
+.FeaturedCollection .item img { 
+margin-top:45px;
+padding-left:18px;
+width: 15rem;
+height: 10rem;
 
 }
-.item{
-    margin-top: 1500px;
-    margin-left: 132px;
+
+.item .price {
+    display:left;
+    margin-top:70px;
+    padding-left: 15px;
+    color: #3F2A74;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.375rem;
+    font-weight: 800;
+}
+
+.item .stock {
+    margin-top:40px;
+    margin-left: 200px;
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 200;
 }
