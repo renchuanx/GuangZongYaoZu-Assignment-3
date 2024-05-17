@@ -252,10 +252,10 @@ color: #FFFFFF;
         font-weight: 200;
     }
 
-    .viewall{
+    .bestsellers .viewall{
         display: left;
         margin-top: 50px;
-        padding-left: 712px;
+        padding-left: 545px;
         color:#FFFFFF;
         font-family: 'Inter', sans-serif;
         font-size: 1.25rem;
@@ -267,8 +267,8 @@ color: #FFFFFF;
         position: absolute;
         width: 500px;
         height: 50px;
-        left: 530px;
-        top: 2000px;
+        left: 510px;
+        top: 2050px;
         
         font-family: 'Arbutus';
         font-style: normal;
@@ -334,4 +334,14 @@ height: 10rem;
     font-family: 'Inter', sans-serif;
     font-size: 0.75rem;
     font-weight: 200;
+}
+ .viewall{
+    display: left;
+    margin-top: 50px;
+    padding-left: 545px;
+    color:#FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-decoration-line: underline;
 }
