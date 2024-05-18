@@ -345,3 +345,48 @@ height: 10rem;
     font-weight: 400;
     text-decoration-line: underline;
 }
+.LatestReview h3{
+    position: absolute;
+    width: 500px;
+    height: 50px;
+    left: 575px;
+    top: 2790px;
+    
+    font-family: 'Arbutus';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    color: #FFFFFF;
+
+
+}
+.comments{
+    margin-top: 200px;
+    margin-left: 230px;
+    top: 3040px;
+}
+.comments img{
+    padding-top: 20px;
+}
+
+.rating h3{
+    position: absolute;
+    width: 500px;
+    height: 50px;
+    left: 575px;
+    top: 3800px;
+    
+    font-family: 'Arbutus';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    color: #FFFFFF;
+
+}
+.rating img{
+    margin-top: 150px;
+    margin-left:230px;
+
+}
