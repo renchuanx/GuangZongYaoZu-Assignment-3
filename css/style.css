@@ -8,9 +8,10 @@ body{
 
 .searchbar{
     position: absolute;
-
     height: 126px;
-    background: #252525;
+    width: 80.5rem;
+    height: 7.875rem;
+    fill: #252525;
 
 }
 
@@ -34,7 +35,7 @@ box-sizing: border-box;
 position: absolute;
 width: 512px;
 height: 49px;
-left: 470px;
+left: 460px;
 top: 43px;
 
 background: #FFFFFF;
@@ -390,6 +391,9 @@ height: 10rem;
     margin-left:230px;
 
 }
+.giftcard{
+    padding-bottom: 500px;
+}
 .giftcard h3{
     position: absolute;
     width: 500px;
@@ -441,7 +445,8 @@ height: 10rem;
         }
 .footer{
     display:center;
-    padding-top: 600px;
+    padding-top: 100px;
+
         
 }
 .icons{
@@ -560,5 +565,212 @@ height: 10rem;
     width:2rem;
     margin-left: 1200px;
 
+}
+
+.title{
+padding-top: 200px;
+padding-bottom: 50px;
+
 
 }
+.title p{
+    margin-left:70px;
+    width: 27rem;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+.title h3{
+    padding-top: 10px;
+    margin-left:70px;
+    color: #FFF;
+    font-family: Arbutus;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.filter-options {
+    margin-left: 70px;
+    display: flex;
+
+}
+
+.filter-button{
+    display: flex;
+    margin-top: 10px;
+    width: 27rem;
+    height: 3.0625rem;
+    border-radius: 0.3125rem;
+    background: linear-gradient(180deg, #E7E6E6 0%, #FEFDFD 100%);
+
+}
+.filter-button h6{
+    margin-left:65px;
+    margin-top: 10px;
+    text-align: flex;;
+    width: 11rem;
+    height: 2.0625rem;
+    color: #000;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+.sort-button {
+    margin-top: 10px;
+    margin-left:610px;
+    display: flex;
+    width: 13rem;
+    height: 3.0625rem;
+    border-radius: 0.3125rem;
+    background: linear-gradient(180deg, #E7E6E6 0%, #FEFDFD 100%);
+}
+
+.sort-button h6{
+    position:absolute;
+    margin-top: 10px;
+    left:1130px;
+    width: 9.30719rem;
+    height: 2.1875rem;
+    color: #000;
+    font-family: Inter;
+    font-size: 1.5rem;
+
+}
+
+.filter-button img{
+    
+    padding-top: 5px;
+    margin-left: 10px;
+    width: 3rem;
+    height: 3em;
+}
+
+.sort-button img {
+    position:absolute;
+    margin-top: 6px;
+    left:1260px;
+    width: 2.625rem;
+    height: 2.4375rem;
+}
+
+.title .fliter{
+    margin-top: 10px;
+    padding-top: 10px;
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    padding-top: 5px;
+    margin-left:30px;
+
+
+}
+.listproducts{
+    margin-top:40px;
+    margin-left:115px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.listproducts .product{
+    margin-left: 18px;
+    justify-content: space-between;
+    display: inline-block;
+    margin-right:30px;
+    width: 16.5rem;
+    height: 25rem;    
+    background: linear-gradient(180deg, #E6E5E5 0%, #FFFFFF 100%);
+    border-radius: 10px;
+}
+
+.product img{
+    margin-top: 45px;
+    margin-left: 25px;
+    width: 13rem;
+    height: 9rem;
+
+
+}
+.product h6{
+    text-align: left;
+    padding-left: 30px;
+    color: #000;
+    font-family: Inter;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 0.875rem;
+}
+.product .price{
+    text-align: left;
+    padding-left: 30px;
+    color: #3F2A74;
+    font-family: Inter;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.product button{
+    width: 4rem;
+    height: 0.5625rem;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 0.7rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top:10px;
+    margin-left: 40px;
+    width: 11.10613rem;
+    height: 1.8795rem;
+    border-radius: 0.3125rem;
+    background: #072865;
+}
+.product .stock{
+    margin-top: 15px;
+    margin-left: 210px;
+    width: 3rem;
+    height: 0.68344rem;
+    color: #000;
+    font-family: Inter;
+    font-size: 0.55rem;
+    font-style: normal;
+    font-weight: 170;
+    line-height: normal;
+
+}
+.pagination {
+    margin-left: 550px;
+    margin-top: 130px;
+    display: inline-block;
+  }
+  
+  .pagination a {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    background-color: #FFF;;
+    color: #000;
+    font-family: Inter;
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .pagination a:hover:not(.active) {background-color: #ddd;}
