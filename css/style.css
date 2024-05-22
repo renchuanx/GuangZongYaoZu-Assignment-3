@@ -569,16 +569,16 @@ height: 10rem;
 
 .title{
 padding-top: 200px;
-padding-bottom: 50px;
+padding-bottom: 20px;
 
 
 }
 .title p{
-    margin-left:70px;
+    margin-left:60px;
     width: 27rem;
     color: #FFF;
     font-family: Inter;
-    font-size: 1.25rem;
+    font-size: 0.9rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -774,3 +774,258 @@ padding-bottom: 50px;
     line-height: normal;
   }
   .pagination a:hover:not(.active) {background-color: #ddd;}
+
+.productinfo{
+    display:flex;
+    
+}
+
+.productdetail h3{
+    margin-left:90px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+.productdetail img{
+    margin-top: 20px;
+    margin-left:90px;
+
+}
+
+.productinfo .price{
+    margin-left: 110px;
+    display: flex;
+}
+.productinfo .price p{
+    margin-top: 60px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+.productinfo .price h4{
+    margin-top: 60px;
+    margin-left: 230px;
+    font-size: 30px;
+    font-family: Inter;
+    color: #fff;
+    height: 27px;
+}
+
+.productinfo .quantity-container{
+    margin-left: 110px;
+    display: flex;
+}
+
+.productinfo .quantity-container p{
+    margin-top: 50px;
+
+    color: #FFF;
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+.quantity-container .button{
+    margin-left: 130px;
+    margin-top: 35px;
+
+}
+.quantity-container .button button{
+    margin-left: 20px;
+    margin-right:35px;
+    width:2.3rem;
+    height: 2.3rem;
+
+}
+.quantity-container .button input{
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 700;
+    margin-left: 10px;
+    margin-right:30px;
+    width:4rem;
+    height: 4rem;
+}
+.cartandbuy img{
+    margin-left: 120px;
+    margin-top: 80px;
+    width: 3.2625rem;
+    height: 3.1625rem;
+}
+.cartandbuy button{
+
+    margin-left:150px;
+    color: #FFF;    
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: #072865;
+    width: 19rem;
+    height: 3.5rem;
+}
+
+.cartandbuy button:hover:not(.active) {background-color: black;}
+
+#icons {
+    margin-top: 40px;
+    margin-left:550px;
+  }
+
+.detailpicture{
+    margin-left: 240px;
+    display:flex;
+    margin-top: 20px;
+}
+
+.detailpicture img{ 
+    margin-left:35px;
+}
+
+.tabs{
+    display:flex;
+    margin-top: 100px;
+    margin-left:150px;
+ }
+ .tabs .tabactive{
+    color: #EFEEEE;
+    font-family: Inter;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-right: 30px;
+    width: 22.6875rem;
+    height: 2.0625rem;
+    border-radius: 0.125rem;
+    background: #072865;
+
+ }
+
+ .tabs .tabactive:hover:not(.active) {background-color: black;}
+
+ .tabs .tab{
+    color: #000;
+    font-family: Inter;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-right: 30px;
+    width: 22.6875rem;
+    height: 2.0625rem;
+    border-radius: 0.125rem;
+    background: #EFEEEE;
+
+
+ }
+
+.description{
+    margin-top: 80px;
+    display: center;
+    
+}
+.description h4{
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.description P{
+    margin-left: 240px;
+    display:center;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 62.375rem;
+    height: 10em;
+    flex-shrink: 0;
+
+}
+.related-products{
+    display: center;
+    margin-top: 80px;
+    
+}
+.related-products h4{
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.relatedpicture{
+    margin-left: 180px;
+
+}
+.related-products img{
+
+    margin-left: 200px;
+    margin-top: 80px;
+
+}
+
+.top-reviewed-items{
+    display: center;
+    margin-top: 130px;
+
+}
+.top-reviewed-items h4{
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.top-reviewed-items .section{
+    margin-top:60px;
+    margin-left: 450px;
+
+}
+.section img{
+    margin-top: 20px;
+    margin-right: 30px;
+
+}
+
+.review{
+    text-align: center;
+
+}
+.review h6{
+    margin-left: 550px;
+    text-align: center;
+    width: 23.5625rem;
+    height: 1.6875rem;
+    color: #FFF;
+    font-family: Arbutus;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
