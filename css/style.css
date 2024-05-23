@@ -113,6 +113,10 @@ li{
     padding: 16px 90px;  
 
 }
+a{
+
+    color: #FFFFFF;    
+}
 
 .banner{
 position: absolute;
@@ -429,7 +433,7 @@ height: 10rem;
     height: 19.5625rem;
 
 }
-  .giftcard .button {
+  .giftcard .showmore-button {
         position: absolute;
         top: 4560px;
         left: 230px;
