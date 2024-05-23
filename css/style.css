@@ -445,7 +445,7 @@ height: 10rem;
         }
 .footer{
     display:center;
-    padding-top: 100px;
+    padding-top: 200px;
 
         
 }
@@ -1182,7 +1182,5 @@ padding-bottom: 20px;
     align-items: center;
     border-radius: 0.3125rem;
     background: #F5F5F5;
-
-
 
 }
