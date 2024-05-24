@@ -3,27 +3,24 @@ body{
     background-color: #101117;
 }
 
-
 * {box-sizing: border-box;}
 
 .searchbar{
-    position: absolute;
-    height: 126px;
-    width: 80.5rem;
-    height: 7.875rem;
-    fill: #252525;
-
+    display:flex;
+    width:auto;
+    height: 7rem;
+    background: #101117;
+    
+    
 }
 
 .logo{
-position: absolute;
+
+margin-left: 60px;
+margin-top:15px;
+margin-bottom: 10px;
 width: 328px;
 height: 80px;
-left: 60px;
-top: 24px;
-
-background: url(shoptitle_300x@2x.png);
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
 }
 
@@ -31,86 +28,81 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 .searchbar input[type=text]{
 
 box-sizing: border-box;
-
-position: absolute;
-width: 512px;
+margin-top: 40px;
+margin-left: 90px;
+width: 480px;
 height: 49px;
-left: 460px;
-top: 43px;
 
 background: #FFFFFF;
-border: 1px solid #FFFFFF;
-border-radius: 2px;
+border: 2px solid #FFFFFF;
+border-radius: 4px;
+
+}
+
+.searchbar .search{
+    margin-left: 10px;
+    margin-top: 40px;
+    width:3.5rem;
+    height: 49px;
+    border-radius: 4px;
+    background-color: white;
+
 
 }
 
 .user{
-position: absolute;
+margin-top: 40px;
+margin-left: 100px;
 width: 43px;
 height: 43px;
-left: 1100px;
-top: 46px;
 
-background: url(user.png);
 }
 
 .cart{
-position: absolute;
-width: 48px;
+margin-top: 40px;
+margin-left: 45px;
 height: 49px;
 left: 1200px;
-top: 43px;
 
 }
 
-
 .language{
-position: absolute;
+margin-top: 40px;
+margin-left: 45px;
 width: 46px;
 height: 46px;
-left: 1300px;
-top: 46px;
 
-background: url(world.png);
 }
 
 .search icon{
-position: absolute;
+margin-top: 40px;
+margin-left: 20px;
 width: 39px;
 height: 35px;
-left: 1000px;
-top: 51px;
-
-background: url(image.png), url(image.png), url(image.png), url(image.png), url(image.png);
 
 }
 
 .navigationbar{
-margin:0;
-position: absolute;
-width: 1423px;
+display: center;
+margin-top: 20px;
+width: auto;
 height: 60px;
-left: 15px;
-top: 126px;
 
 background: #1A1A1A;
 border-radius: 20px;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+    padding-left: 130px;
 }
 
 li{
+    margin-top: 15px;
+    margin-right: 178px;
     font-family: 'Inder';
     font-size: 24px ;
-    margin-left: 10px;
     color: #FFFFFF;    
     display: inline-block;
-    text-align: center;
-    padding: 16px 90px;  
 
 }
 a{
@@ -119,38 +111,31 @@ a{
 }
 
 .banner{
-position: absolute;
-width: 1300px;
-height: 550px;
-left: 124px;
-top: 240px;
-
-background: url(image.png);
+    margin-top: 40px;
+    margin-left: 135px;
+    width: 1300px;
+    height: 550px;
 
 }
 
 .contactlogo{
-position: absolute;
-width: 200px;
-height: 200px;
-left: 1240px;
-top: 880px;
+    height: 200px;
+    left: 1240px;
+
+
 }
 
 .category h3{
-position: absolute;
-width: 224px;
-height: 50px;
-left: 640px;
-top: 860px;
-
-font-family: 'Arbutus';
-font-style: normal;
-font-weight: 400;
-font-size: 40px;
-line-height: 50px;
-
-color: #FFFFFF;
+    
+    width: 224px;
+    height: 50px;
+    
+    font-family: 'Arbutus';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    color: #FFFFFF;
 }
 .category img{
     padding-top: 980px;
@@ -1341,10 +1326,8 @@ padding-bottom: 20px;
 .button{
     margin-top: 50px;
     margin-left: 1000px;
-
-
-
 }
+
 .button .Checkout{
     margin-bottom: 5px;
     width: 23.625rem;
@@ -1358,6 +1341,7 @@ padding-bottom: 20px;
     font-weight: 500;
     line-height: normal;
 }
+
 .button .paypal-button{
     margin-bottom: 10px;
     background: none;
