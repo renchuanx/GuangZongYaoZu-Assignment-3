@@ -755,7 +755,8 @@ padding-bottom: 20px;
 
 }
 .pagination {
-    margin-left: 550px;
+    display:center;
+    margin-left: 500px;
     margin-top: 130px;
     display: inline-block;
   }
@@ -1417,3 +1418,96 @@ padding-bottom: 20px;
     text-decoration-line: underline;
 
 }
+.confrimation{
+    margin-top: 50px;
+    margin-left: 60px;
+    display:center;
+    width: 78.875rem;
+    height: 46.75rem;   
+    border-radius: 1rem;
+    background: linear-gradient(180deg, #E7E6E6 0%, #FFF 100%);
+
+}
+.confrimation .confirme-icon{
+    margin-top: 70px;
+    margin-left: 600px;
+    display: center;
+    width: 5rem;
+    height: 5rem;
+}
+
+.confrimation h1{
+    color: #000;
+    font-family: Inter;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+
+}
+
+.con-product1,.con-product2{
+    display:flex;
+    margin-left: 250px;
+    margin-top: 30px;
+
+}
+.con-product1 h4,.con-product2 h4{
+    text-align: left;
+    margin-left: 300px;
+    color: #000;
+    font-family: Inter;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.detailed-info-con{
+    margin-top: 50px;
+    margin-left: 180px;
+    display:flex;
+
+}
+.con-details{
+    margin-right: 160px;
+}
+
+.con-details h6{
+    text-align: center;
+    color: #000;
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+
+.con-details p{
+    text-align: center;
+    color: #000;
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+
+}
+.confrimation button{
+    margin-left: 550px;
+    margin-top: 100px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 12.875rem;
+    height: 3.25rem;
+    border-radius: 0.3125rem;
+    background: #072865;
+
+}
+
