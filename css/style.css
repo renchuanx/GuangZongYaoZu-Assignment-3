@@ -85,7 +85,7 @@ height: 35px;
 .navigationbar{
 display: center;
 margin-top: 20px;
-width: auto;
+width: 1368px;
 height: 60px;
 
 background: #1A1A1A;
@@ -93,12 +93,12 @@ border-radius: 20px;
 }
 
 ul {
-    padding-left: 130px;
+    padding-left: 150px;
 }
 
 li{
     margin-top: 15px;
-    margin-right: 178px;
+    margin-right: 155px;
     font-family: 'Inder';
     font-size: 24px ;
     color: #FFFFFF;    
@@ -112,21 +112,25 @@ a{
 
 .banner{
     margin-top: 40px;
-    margin-left: 135px;
+    margin-left: 120px;
     width: 1300px;
     height: 550px;
 
 }
 
 .contactlogo{
+
+    position: absolute;
+    width: 200px;
     height: 200px;
     left: 1240px;
-
+    top: 880px;
 
 }
 
 .category h3{
-    
+    margin-top: 100px;
+    margin-left: 600px;
     width: 224px;
     height: 50px;
     
@@ -137,21 +141,26 @@ a{
     line-height: 50px;
     color: #FFFFFF;
 }
-.category img{
-    padding-top: 980px;
-    padding-left: 132px;
+.category .categroy-img{
+    margin-top: 60px;
+    margin-left: 110px;
+    display: inline;
     
+}
+
+.categroy-img img{
+    margin-right: 120px;
 }
 .category ul {
     top: 1200px;
-    margin-left: 80px;
+    margin-left: 30px;
     overflow: hidden;
 }
 
 .category li{
     font-family: 'Inder';
     font-size: 26px ;
-    margin-right: 60px;
+    margin-right: 210px;
     color: #FFFFFF;    
     display: inline-block;
     text-align: center;
@@ -159,11 +168,11 @@ a{
 }
 
 .bestsellers h3{
-    position: absolute;
+    margin-bottom: 100px;
+    margin-left: 450px;
     width: 500px;
     height: 50px;
-    left: 600px;
-    top: 1320px;
+    
     
     font-family: 'Arbutus';
     font-style: normal;
@@ -174,7 +183,7 @@ a{
     }
 
     .bestsellers {
-        padding-top: 220px;
+        padding-top: 50px;
         padding-left: 160px;
         width: 100%;
   
@@ -254,11 +263,11 @@ a{
     }
 
     .FeaturedCollection h3{
-        position: absolute;
+        margin-bottom: 80px;
+        margin-left: 350px;
         width: 500px;
         height: 50px;
-        left: 510px;
-        top: 2050px;
+      
         
         font-family: 'Arbutus';
         font-style: normal;
@@ -269,7 +278,7 @@ a{
     }
 
 .FeaturedCollection{
-    padding-top: 200px;
+        margin-top: 100px;
         padding-left: 160px;
         width: 100%;
   
@@ -336,11 +345,11 @@ height: 10rem;
     text-decoration-line: underline;
 }
 .LatestReview h3{
-    position: absolute;
+    margin-top: 100px;
+    margin-left: 580px;
     width: 500px;
     height: 50px;
-    left: 575px;
-    top: 2800px;
+    
     
     font-family: 'Arbutus';
     font-style: normal;
@@ -352,7 +361,7 @@ height: 10rem;
 
 }
 .comments{
-    margin-top: 200px;
+    margin-top: 50px;
     margin-left: 230px;
     top: 3040px;
 }
@@ -361,11 +370,12 @@ height: 10rem;
 }
 
 .rating h3{
-    position: absolute;
+    margin-top: 80px;
+    margin-left: 550px;
     width: 500px;
     height: 50px;
-    left: 575px;
-    top: 3780px;
+    
+   
     
     font-family: 'Arbutus';
     font-style: normal;
@@ -376,19 +386,18 @@ height: 10rem;
 
 }
 .rating img{
-    margin-top: 150px;
+    margin-top: 50px;
     margin-left:230px;
 
 }
-.giftcard{
-    padding-bottom: 500px;
-}
+
 .giftcard h3{
-    position: absolute;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 600px;
     width: 500px;
     height: 50px;
-    left: 615px;
-    top: 4200px;
+   
     
     font-family: 'Arbutus';
     font-style: normal;
@@ -398,39 +407,42 @@ height: 10rem;
     color: #FFFFFF;
 
 }
+.card{
+    display:flex;
+    margin-left: 220px;
+    
+}
 .giftcard p{
-    position: absolute;
-    top:4350px;
-    left:230px;
+
     color: #F5F5F5;
     font-family: Inter;
-    font-size: 1.875rem;
+    font-size: 1.875em;
     font-style: normal;
     font-weight: 500;
-    line-height: 2rem;
+
 }
 
 .giftcard img{
-    position: absolute;
-    top:4380px;
-    left:930px;
+    margin-left: 150px;
     width: 19.5625rem;
-    height: 19.5625rem;
+    height: 19rem;
 
 }
   .giftcard .showmore-button {
-        position: absolute;
-        top: 4560px;
-        left: 230px;
+    
+        margin-top: 30px;
         width: 18rem;
         height: 3.75rem;
         flex-shrink: 0;
         border-radius: 0.3125rem;
         background: #072865;
         display: flex; 
+        font-size: 25px;
+        line-height: 30px;
+         color: #FFFFFF;
         justify-content: center; 
         align-items: center; 
-        color: white;
+        
         }
 .footer{
     display:center;
@@ -438,8 +450,10 @@ height: 10rem;
 
         
 }
+
 .icons{
     margin-top:100px;
+    margin-left:20px;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -447,12 +461,12 @@ height: 10rem;
 
 }
 .icons img{
-    padding-left:150px;
+    padding-left:120px;
 }
 .icons p{
     
     margin-top: 30px;
-    margin-left:130px;
+    margin-left:100px;
     color: #F5F5F5;
     font-family: Inder;
     font-size: 1.25rem;
@@ -460,8 +474,19 @@ height: 10rem;
     font-weight: 400;
     line-height: normal;
 
+}
+.about-us,.services{
+    display:flex;
 
 }
+.about-us img ,.services img{
+    margin-left: 980px;
+    margin-top: 95px;
+    width:2rem;
+    height: 2rem;
+
+}
+
 .footer-section h3{
     padding-left:120px;
     margin-top: 80px;
@@ -478,6 +503,7 @@ height: 10rem;
 }
 
 .subscribe h2{
+    
     text-align: center;
     margin-top: 130px;
     font-family: 'Arbutus';
@@ -532,7 +558,7 @@ height: 10rem;
 }
 .footer-section p {
     margin-left: 20px;
-    margin-top: 50px;
+    margin-top: 10px;
     text-align: center;
     color: #F5F5F5;
     font-family: Inder;
@@ -550,14 +576,9 @@ height: 10rem;
 .social img, .payment img {
     margin: 0 10px;
 }
-.footer-section .plus{
-    width:2rem;
-    margin-left: 1200px;
-
-}
 
 .title{
-padding-top: 200px;
+padding-top: 10px;
 padding-bottom: 20px;
 
 
@@ -614,7 +635,7 @@ padding-bottom: 20px;
 }
 .sort-button {
     margin-top: 10px;
-    margin-left:610px;
+    margin-left:550px;
     display: flex;
     width: 13rem;
     height: 3.0625rem;
@@ -637,15 +658,12 @@ padding-bottom: 20px;
 .filter-button img{
     
     padding-top: 5px;
-    margin-left: 10px;
     width: 3rem;
     height: 3em;
 }
 
 .sort-button img {
-    position:absolute;
-    margin-top: 6px;
-    left:1260px;
+    margin-top: 5px;
     width: 2.625rem;
     height: 2.4375rem;
 }
@@ -663,7 +681,7 @@ padding-bottom: 20px;
 }
 .listproducts{
     margin-top:40px;
-    margin-left:115px;
+    margin-left:70px;
     display: flex;
     flex-wrap: nowrap;
 }
@@ -770,7 +788,7 @@ padding-bottom: 20px;
 }
 
 .productdetail h3{
-    margin-left:90px;
+    margin-left:50px;
     color: #FFF;
     font-family: Inter;
     font-size: 1.5rem;
@@ -781,7 +799,7 @@ padding-bottom: 20px;
 }
 .productdetail img{
     margin-top: 20px;
-    margin-left:90px;
+    margin-left:50px;
 
 }
 
@@ -889,22 +907,30 @@ padding-bottom: 20px;
     margin-top: 100px;
     margin-left:150px;
  }
+
  .tabs .tabactive{
-    color: #EFEEEE;
+    color: #072865;
     font-family: Inter;
     font-size: 0.9rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin-right: 30px;
     width: 22.6875rem;
     height: 2.0625rem;
     border-radius: 0.125rem;
-    background: #072865;
+    background: #EFEEEE;
 
  }
 
- .tabs .tabactive:hover:not(.active) {background-color: black;}
+ .tabs .tabactive:hover:not(.active) {
+    color: #EFEEEE;
+    border-radius: 1rem;
+    background-color:  #072865;
+    width: 24rem;
+    font-size:150%;
+    height: 3rem;
+
+}
 
  .tabs .tab{
     color: #000;
@@ -913,13 +939,20 @@ padding-bottom: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin-right: 30px;
     width: 22.6875rem;
     height: 2.0625rem;
     border-radius: 0.125rem;
     background: #EFEEEE;
 
+ }
 
+ .tabs .tab:hover:not(.active) {
+    color: #EFEEEE;
+    border-radius: 1rem;
+    background-color:  #072865;
+    width: 24rem;
+    font-size:150%;
+    height: 3rem;
  }
 
 .description{
@@ -937,7 +970,7 @@ padding-bottom: 20px;
     line-height: normal;
 }
 .description P{
-    margin-left: 240px;
+    margin-left: 200px;
     display:center;
     color: #FFF;
     text-align: center;
