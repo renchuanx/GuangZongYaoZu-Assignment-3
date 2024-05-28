@@ -1,84 +1,187 @@
 <!DOCTYPE html>
-<html lang=en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple HTML Page</title>
-    <link rel="stylesheet" href="styles.css">
+    
 </head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Arbutus&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    
+</style>
+</style>
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <img src="logo.png" alt="Games We Played">
-            </div>
-            <div class="search-bar">
-                <input type="text" placeholder="search...">
-            </div>
-            <div class="nav-links">
-                <a href="#">Home</a>
-                <a href="#">Games</a>
-                <a href="#">Console</a>
-                <a href="#">Other</a>
-                <a href="#">Contact Us</a>
-            </div>
-            <div class="user-cart">
-                <a href="#"><i class="fa fa-user"></i></a>
-                <a href="#"><i class="fa fa-shopping-cart"></i></a>
-                <a href="#"><i class="fa fa-globe"></i></a>
-            </div>
-        </nav>
-    </header>
+
+        <div class="searchbar">
+        <img src="image/shoptitle_300x@2x.avif" alt="logo" class="logo">
+        <input type="text" placeholder="Search..">
+        <img src="image/image 18.png" alt="search icon" class="search">
+        <img src="image/user 2.png" alt="user" class="user">
+        <img src="image/cart (1) 2.png" alt="cart" class="cart">
+        <img src="image/world 2.png" alt="language"class=language>
+        </div>
+
+         <div class="navigationbar"> 
+            <ul>
+                <li><a href=index.html>Home</a></li>
+                <li>Games</li>
+                <li>Consoles</li>
+                <li>Other</li> 
+                <li>Contact us</li>
+              </ul>
+         </div>
+
+        <main>
+            <section class="checkout">
+                <h2>Check out</h2>
+                <div class="checkout-options">
+                    <button class="paypal">
+                    <img src="image/yellow paypal bg. png" alt="Paypal">
+                    </button>
+                    <button class="apple-pay">
+                    <button class="image/apple-pay bg.png"alt="Apple Pay">
+                    </button>
+                </div>
+                <h2>Exist customer:</h2>
+                <div class="existing-customer">
+                    <div class="customer-info">
+                        <p><strong>Yilia Xu</strong></p>
+                        <p>0424 851 088</p>
+                        <p>A’beckett St/1909/31</p>
+                        <p>melbourne/victoria/3000/Australia</p>
+                    </div>
+                    <button class="edit">Edit</button>
+                </div>
+                <h2>Customer</h2>
+                <form>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                    <div class="newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Subscribe to our newsletters</label>
+                    </div>
+                    <button type="submit">Continue</button>
+                </form>
+            </section>
+            <aside class="order-summary">
+                <h2>Order Summary</h2>
+                <div class="order-item">
+                    <p>Xbox One X (CYV-00015)</p>
+                    <p>$977.99</p>
+                </div>
+                <div class="order-item">
+                    <p>Nintendo Switch Console OLED Model (White)</p>
+                    <p>$539.00</p>
+                </div>
+                <div class="coupon">
+                    <label for="coupon">Coupon/Gift Certificate</label>
+                    <input type="text" id="coupon" name="coupon">
+                    <button>Apply</button>
+                </div>
+                <div class="totals">
+                    <p>Subtotal: $1516.99</p>
+                    <p>Shipping: Enter shipping address</p>
+                    <p>Total: AUD $1516.99</p>
+                </div>
+                <button class="place-order">Place Order</button>
+            </aside>
+        </main>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+    </html>
     <main>
-        <section class="checkout">
-            <h1>Check out</h1>
-            <div class="checkout-options">
-                <button class="paypal">PayPal</button>
-                <button class="apple-pay">Apple Pay</button>
+        <section class="form-section">
+            <div class="shipping-section">
+                <h2>Shipping</h2>
+                <h1>Shipping Address</h1>
+                <form>
+                    <label for="country">Country</label>
+                    <select id="country" name="country" required>
+                        <option value="">Select a country</option>
+                        <!-- Add country options here -->
+                    </select>
+                    
+                    <label for="first-name">First Name</label>
+<input type="text" id="first-name" name="first-name" required pattern="[A-Za-z\s]+" title="Please enter only letters and spaces.">
+                    
+                    <label for="last-name">Last Name</label>
+<input type="text" id="last-name" name="last-name" required pattern="[A-Za-z\s]+" title="Please enter only letters and spaces.">
+                    
+                     <label for="address">Address</label>
+<input type="text" id="address" name="address" required pattern="[A-Za-z0-9\s.,#'/-]+" title="Please enter only letters, numbers, and punctuation.">
+                    
+                    <label for="apartment">Apartment/Suite/Building (optional)</label>
+<input type="text" id="apartment" name="apartment" pattern="[A-Za-z0-9\s.,#'/-]+" title="Please enter only letters, numbers, and punctuation.">
+               
+                    <label for="company">Company Name (Optional)</label>
+<input type="text" id="company" name="company" pattern="[A-Za-z\s.,#'/-]+" title="Please enter only letters and punctuation.">
+
+                    label for="city">City</label>
+<input type="text" id="city" name="city" required pattern="[A-Za-z\s.,#'/-]+" title="Please enter only letters and punctuation.">
+
+                    <label for="state">State/Province</label>
+<input type="text" id="state" name="state" required pattern="[A-Za-z\s.,#'/-]+" title="Please enter only letters and punctuation.">
+
+                    
+                    <label for="postal-code">Postal Code</label>
+<input type="text" id="postal-code" name="postal-code" required pattern="[0-9]+" title="Please enter only numbers.">
+
+                    <label for="phone-number">Phone Number</label>
+<input type="text" id="phone-number" name="phone-number" required pattern="[0-9]+" title="Please enter only numbers.">
+                    
+                    <div class="text-message">
+                        <input type="checkbox" id="text-message" name="text-message">
+                        <label for="text-message">Send me news and special offers via text message</label>
+                    </div>
+                    
+                    <p class="consent-message">
+                        By checking this box and entering your phone number above, you consent to receive marketing text messages (e.g., promos, cart reminders) from DKOldies at the number provided, including messages sent by autodialer. Consent is not a condition of purchase. Msg & data rates may apply. Msg frequency varies. Unsubscribe at any time by replying STOP or clicking the unsubscribe link (where available). Privacy Policy & Terms
+                    </p>
+                </form>
             </div>
-            <h2>Exist customer:</h2>
-            <div class="existing-customer">
-                <div class="customer-info">
-                    <p><strong>Yilia Xu</strong></p>
-                    <p>0424 851 088</p>
-                    <p>Address: 91/109/31 Melbourne, Victoria 3000, Australia</p>
-                </div>
-                <button class="edit">Edit</button>
-            </div>
-            <h2>Customer</h2>
-            <form>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
-                <div class="newsletter">
-                    <input type="checkbox" id="newsletter" name="newsletter">
-                    <label for="newsletter">Subscribe to our newsletters</label>
-                </div>
-                <button type="submit">Continue</button>
-            </form>
         </section>
-        <aside class="order-summary">
-            <h2>Order Summary</h2>
-            <div class="order-item">
-                <p>Xbox One X (CYV-00015)</p>
-                <p>$977.99</p>
-            </div>
-            <div class="order-item">
-                <p>Nintendo Switch Console OLED Model (White)</p>
-                <p>$539.00</p>
-            </div>
-            <div class="coupon">
-                <label for="coupon">Coupon/Gift Certificate</label>
-                <input type="text" id="coupon" name="coupon">
-                <button>Apply</button>
-            </div>
-            <div class="totals">
-                <p>Subtotal: $1516.99</p>
-                <p>Shipping: Enter shipping address</p>
-                <p>Total: AUD $1516.99</p>
-            </div>
-            <button class="place-order">Place Order</button>
-        </aside>
     </main>
 </body>
 </html>
