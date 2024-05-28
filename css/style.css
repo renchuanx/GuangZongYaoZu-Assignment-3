@@ -1733,3 +1733,71 @@ padding-bottom: 20px;
     font-size: 22px; /* 调整字体大小*/
     font-weight: semi bold; /* 调整字体粗细 */
 }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.payment-section, .delivery-section {
+    margin-bottom: 40px;
+}
+
+.payment-options label, .delivery-options label {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.payment-options input[type="radio"], .delivery-options input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.payment-options img, .credit-card-logos img {
+    margin-left: auto;
+    width: 50px;
+    height: auto;
+}
+
+.credit-card-logos img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.credit-card-fields {
+    display: none; /* Initially hide the credit card fields */
+    margin-top: 10px;
+}
+
+.payment-options input[type="radio"]:checked ~ .credit-card-fields {
+    display: flex;
+    flex-direction: column;
+}
+
+.credit-card-fields input {
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+}

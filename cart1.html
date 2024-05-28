@@ -41,10 +41,10 @@
                 <h2>Check out</h2>
                 <div class="checkout-options">
                     <button class="paypal">
-                    <img src="image/yellow paypal bg. png" alt="Paypal">
+                    <img src="image/yellow paypal bg.png" alt="Paypal">
                     </button>
                     <button class="apple-pay">
-                    <button class="image/apple-pay bg.png"alt="Apple Pay">
+                    <button class="image/applely pay bg.png"alt="Apple Pay">
                     </button>
                 </div>
                 <h2>Exist customer:</h2>
@@ -177,11 +177,57 @@
                     </div>
                     
                     <p class="consent-message">
-                        By checking this box and entering your phone number above, you consent to receive marketing text messages (e.g., promos, cart reminders) from DKOldies at the number provided, including messages sent by autodialer. Consent is not a condition of purchase. Msg & data rates may apply. Msg frequency varies. Unsubscribe at any time by replying STOP or clicking the unsubscribe link (where available). Privacy Policy & Terms
+                    By checking this box and entering your phone number above, you consent to receive marketing text messages (e.g. promos, cart reminders) from DKOldies at the number provided, including messages sent by autodialer. Consent is not a condition of purchase. Msg & data rates may apply. Msg frequency varies. Unsubscribe at any time by replying STOP or clicking the unsubscribe link (where available) Privacy Policy & Terms.
                     </p>
                 </form>
             </div>
         </section>
     </main>
+</html>
+    <main>
+    <section class="payment-section">
+        <h2>Payment</h2>
+        <div class="payment-options">
+            <label>
+                <input type="radio" name="payment-method" value="paypal">
+                <span>Paypal</span>
+                <img src="image/paypal-logo.png" alt="PayPal">
+            </label>
+            <label>
+                <input type="radio" name="payment-method" value="apple-pay">
+                <span>Apple Pay</span>
+                <img src="image/apple-pay-logo.png" alt="Apple Pay">
+            </label>
+            <label>
+                <input type="radio" name="payment-method" value="credit-card">
+                <span>Credit card</span>
+                <div class="credit-card-logos">
+                    <img src="image/visa-logo.png" alt="Visa">
+                    <img src="image/mastercard-logo.png" alt="MasterCard">
+                    <img src="image/amex-logo.png" alt="Amex">
+                    <img src="image/discover-logo.png" alt="Discover">
+                </div>
+            </label>
+            <div class="credit-card-fields">
+                <input type="text" placeholder="Card Number">
+                <input type="text" placeholder="Cardholder Name">
+                <input type="text" placeholder="Expiration Date">
+                <input type="text" placeholder="CVV">
+            </div>
+        </div>
+    <section class="delivery-section">
+        <h2>Delivery</h2>
+        <div class="delivery-options">
+            <label>
+                <input type="checkbox" name="delivery-method" value="pick-up">
+                <span>Pick up</span>
+            </label>
+            <label>
+                <input type="checkbox" name="delivery-method" value="shipping">
+                <span>Shipping</span>
+            </label>
+        </div>
+    </section>
+</main>
 </body>
 </html>
