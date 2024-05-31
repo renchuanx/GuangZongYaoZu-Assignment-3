@@ -59,8 +59,7 @@
 </style>
 </style>
 <body>
-<header>
-
+<div>
     <div class="searchbar">
         <a href="index.html"><img src="image/shoptitle_300x@2x.avif" alt="logo" class="logo"></a>
         <input type="text" placeholder="Search..">
@@ -71,7 +70,7 @@
                 <img src="image/cart (1) 2.png" alt="cart" class="cart">
                 <div id="count"
                      style="position: absolute;
-                     right: 0;top: 40px;
+                     right: 0;top: 30px;
                      border-radius: 8px;
                      padding: 2px 1px;
                      font-size: 14px;
@@ -87,18 +86,17 @@
         </script>
         <img src="image/world 2.png" alt="language" class=language>
     </div>
+</div>
 
-    <div class="navigationbar">
-        <ul>
-            <li><a href=index.html>Home</a></li>
-            <li>Games</li>
-            <li>Consoles</li>
-            <li>Other</li>
-            <li>Contact us</li>
-        </ul>
-    </div>
-
-</header>
+<div class="navigationbar">
+    <ul>
+        <li><a href=index.html>Home</a></li>
+        <li>Games</li>
+        <li>Consoles</li>
+        <li>Other</li>
+        <li>Contact us</li>
+    </ul>
+</div>
 <div class="title">
     <p>Home / Best Seller / Xbox One X</p>
 </div>
@@ -169,7 +167,7 @@
     <button class="tab" onclick="showContent('product-detail')">Product Detail</button>
     <button class="tab" onclick="showContent('warranty-info')">Warranty Information</button>
 </div>
-<div style="display:flex;margin-top: 100px;margin-left:150px;">
+<div class="tabs—content">
     <div id="description" class="content active">
         <h2>Description</h2>
         <p>This is the description content.</p>

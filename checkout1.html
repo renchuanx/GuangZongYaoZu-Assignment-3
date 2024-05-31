@@ -10,179 +10,185 @@
     @import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Arbutus&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-    
+
 </style>
 </style>
 <body>
-    <header>
-
-        <div class="searchbar">
+<div>
+    <div class="searchbar">
         <a href="index.html"><img src="image/shoptitle_300x@2x.avif" alt="logo" class="logo"></a>
         <input type="text" placeholder="Search..">
         <img src="image/image 18.png" alt="search icon" class="search">
         <img src="image/user 2.png" alt="user" class="user">
-            <div class="cart-container">
-                <div style="position: relative">
-                    <img src="image/cart (1) 2.png" alt="cart" class="cart">
-                    <div id="count"
-                         style="position: absolute;
-                     right: 0;top: 40px;
+        <div class="cart-container">
+            <div style="position: relative">
+                <img src="image/cart (1) 2.png" alt="cart" class="cart">
+                <div id="count"
+                     style="position: absolute;
+                     right: 0;top: 30px;
                      border-radius: 8px;
                      padding: 2px 1px;
                      font-size: 14px;
                      background-color: red;
                        text-align: center;"
-                    >
-                    </div>
+                >
                 </div>
             </div>
-            <script>
-                const count=document.getElementById("count")
-                count.innerText=1
-            </script>
-        <img src="image/world 2.png" alt="language"class=language>
         </div>
-
-         <div class="navigationbar"> 
-            <ul>
-                <li><a href=index.html>Home</a></li>
-                <li>Games</li>
-                <li>Consoles</li>
-                <li>Other</li> 
-                <li>Contact us</li>
-              </ul>
-         </div>
-    
-    </header>
-    <div class="title">
-        <p>Home / Best Seller / Xbox One X (CYV-00015) / checkout</p>
+        <script>
+            const count = document.getElementById("count")
+            count.innerText = 1
+        </script>
+        <img src="image/world 2.png" alt="language" class=language>
     </div>
+</div>
 
-    <div class="checkout">
-        <h3>YOUR CART(1 ITEM)</h3>
-        <div class="checkout-detail">
-            <img src="image/checkout1.png">
-            <div class="horizon">
+<div class="navigationbar">
+    <ul>
+        <li><a href=index.html>Home</a></li>
+        <li>Games</li>
+        <li>Consoles</li>
+        <li>Other</li>
+        <li>Contact us</li>
+    </ul>
+</div>
+
+<div class="title">
+    <p>Home / Best Seller / Xbox One X (CYV-00015) / checkout</p>
+</div>
+
+<div class="checkout">
+    <h3>YOUR CART(1 ITEM)</h3>
+    <div class="checkout-detail">
+        <img src="image/checkout1.png">
+        <div class="horizon">
             <h4>Xbox One X (CYV-00015)</h4>
             <p class="price">$977.99</p>
         </div>
-            <div class="number-button">
-                <button id="decrease" class="quantity-button decrease">▼</button>
-                <input type="number" id="quantity" name="quantity" value="1" min="1">
-                <button id="increase" class="quantity-button increase">▲</button>
-            </div>
+        <div class="number-button">
+            <button id="decrease" class="quantity-button decrease">▼</button>
+            <input type="number" id="quantity" name="quantity" value="1" min="1">
+            <button id="increase" class="quantity-button increase">▲</button>
+        </div>
 
-            <script>
-                document.addEventListener('DOMContentLoaded', (event) => {
-                    const decreaseButton = document.getElementById('decrease');
-                    const increaseButton = document.getElementById('increase');
-                    const quantityInput = document.getElementById('quantity');
-                    decreaseButton.addEventListener('click', () => {
-                        let currentValue = parseInt(quantityInput.value);
-                        if (currentValue > 1) {
-                            quantityInput.value = currentValue - 1;
-                        }
-                    });
+        <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+                const decreaseButton = document.getElementById('decrease');
+                const increaseButton = document.getElementById('increase');
+                const quantityInput = document.getElementById('quantity');
+                const totalPrice=document.querySelector('.total-price>p')
+                decreaseButton.addEventListener('click', () => {
+                    let currentValue = parseInt(quantityInput.value);
+                    if (currentValue > 1) {
+                        quantityInput.value = currentValue - 1;
+                        totalPrice.innerHTML='$'+ ((currentValue -1)*977.99).toFixed(2)
+                    }
 
-                    increaseButton.addEventListener('click', () => {
-                        let currentValue = parseInt(quantityInput.value);
-                        quantityInput.value = currentValue + 1;
-                    });
                 });
 
-            </script>
-        </div>
+                increaseButton.addEventListener('click', () => {
+                    let currentValue = parseInt(quantityInput.value);
+                    quantityInput.value = currentValue + 1;
+                    totalPrice.innerHTML='$'+ ((currentValue + 1)*977.99).toFixed(2)
+                });
+            });
+
+        </script>
     </div>
-    <div class="estimate-time">
-        <h3>Estimate Shipping time</h3>
-        <img src="image/hidden button.png">
+</div>
+<div class="estimate-time">
+    <h3>Estimate Shipping time</h3>
+    <img src="image/hidden button.png">
+</div>
+<div class="total">
+    <div class="total-price">
+        <h3>Total:</h3>
+        <p>$977.99</p>
     </div>
-    <div class="total">
-        <div class="total-price">
-            <h3>Total:</h3>
-            <p>$977.99</p>
-        </div>
-            <p class="instructions">order instructions</p>
-            <p class="instructions">Taxes and shipping calculated at checkout</p>
-    </div>
-    <div class="button">
-        <button class="Checkout">Check out</button><br>
+    <p class="instructions">order instructions</p>
+    <p class="instructions">Taxes and shipping calculated at checkout</p>
+</div>
+<div class="button">
+    <div><button class="Checkout">Check out</button>
+        <br>
         <p>-or use -</p>
         <button type="button" class="paypal-button">
             <img src="image/paypal.png" width="200">
-           </button>
+        </button>
         <br>
         <button type="button" class="apple-pay">
             <img src="image/appleepau.png" width="200">
-           </button>
-    </div>
-    <div class="continue-shopping">
-        <h3><a href=index.html>Continue shopping</a></h3>
-    </div>
-    <footer>
-            
-        <div class="footer">
-            <div class="icons">
-                <div>
-                    <img src="image/box 1.png" alt="Shipping Internationally">
-                    <p>Shipping Internationally</p>
-                </div>
-                <div>
-                    <img src="image/return-box 1.png" alt="Satisfied or refunded">
-                    <p>Satisfied or refunded</p>
-                </div>
-                <div>
-                    <img src="image/customer-service 1.png" alt="Top-notch support">
-                    <p>Top-notch support</p>
-                </div>
-                <div>
-                    <img src="image/credit-card 1.png" alt="Secure payments">
-                    <p>Secure payments</p>
-                </div>
-            </div>
+        </button></div>
+</div>
+<div class="continue-shopping">
+    <h3><a href=index.html>Continue shopping</a></h3>
+</div>
+<footer>
 
-            <div class="footer-section">
-                <div class="about-us">
-                <h3>About us</h3>
-                <img class="plus"src="image/plus.png">
-                </div>
-                <p>_______________________________________________________________________________________________________</p>
-                
+    <div class="footer">
+        <div class="icons">
+            <div>
+                <img src="image/box 1.png" alt="Shipping Internationally">
+                <p>Shipping Internationally</p>
             </div>
-            <div class="footer-section">
-                <div class="services">
-                <h3>Services</h3>
-                <img class="plus"src="image/plus.png">
-                </div>
-                <p>_______________________________________________________________________________________________________</p>
-               
+            <div>
+                <img src="image/return-box 1.png" alt="Satisfied or refunded">
+                <p>Satisfied or refunded</p>
             </div>
-            <div class="subscribe">
-                <h2>Join us</h2>
-                <p>Subscribe now and be the first to know about Exclusive Offers - Deals <br>- Sales - New Releases and MORE!</p>
-                <input type="email" placeholder="Your email"><br>
-                <button>Subscribe</button>
+            <div>
+                <img src="image/customer-service 1.png" alt="Top-notch support">
+                <p>Top-notch support</p>
             </div>
-            <div class="footer-section">
-                <p>Follow us</p>
-                <div class="social">
-                    <img src="image/facebook 2.png" alt="Facebook">
-                    <img src="image/instagram 1.png" alt="Instagram">
-                </div>
-            </div>
-            <div class="footer-section">
-                <p>We Accept</p>
-                <div class="payment">
-                    <img src="image/PEYOAL.png" alt="PayPal">
-                    <img src="image/APPLE PAY.png" alt="Apple Pay">
-                </div>
-                <p>&copy; 2024 Games We Played</p>
+            <div>
+                <img src="image/credit-card 1.png" alt="Secure payments">
+                <p>Secure payments</p>
             </div>
         </div>
-   </div>
 
-  
-    
-    </footer>
+        <div class="footer-section">
+            <div class="about-us">
+                <h3>About us</h3>
+                <img class="plus" src="image/plus.png">
+            </div>
+            <p>
+                _______________________________________________________________________________________________________</p>
+
+        </div>
+        <div class="footer-section">
+            <div class="services">
+                <h3>Services</h3>
+                <img class="plus" src="image/plus.png">
+            </div>
+            <p>
+                _______________________________________________________________________________________________________</p>
+
+        </div>
+        <div class="subscribe">
+            <h2>Join us</h2>
+            <p>Subscribe now and be the first to know about Exclusive Offers - Deals <br>- Sales - New Releases and
+                MORE!</p>
+            <input type="email" placeholder="Your email"><br>
+            <button>Subscribe</button>
+        </div>
+        <div class="footer-section">
+            <p>Follow us</p>
+            <div class="social">
+                <img src="image/facebook 2.png" alt="Facebook">
+                <img src="image/instagram 1.png" alt="Instagram">
+            </div>
+        </div>
+        <div class="footer-section">
+            <p>We Accept</p>
+            <div class="payment">
+                <img src="image/PEYOAL.png" alt="PayPal">
+                <img src="image/APPLE PAY.png" alt="Apple Pay">
+            </div>
+            <p>&copy; 2024 Games We Played</p>
+        </div>
+    </div>
+    </div>
+
+
+</footer>
 </body>
 </html>

@@ -15,45 +15,44 @@
 </style>
 </style>
 <body>
-    <header>
-        <div class="searchbar">
-        <a href="index.html"><a href="index.html"><img src="image/shoptitle_300x@2x.avif" alt="logo" class="logo"></a></a>
+<div>
+    <div class="searchbar">
+        <a href="index.html"><img src="image/shoptitle_300x@2x.avif" alt="logo" class="logo"></a>
         <input type="text" placeholder="Search..">
         <img src="image/image 18.png" alt="search icon" class="search">
         <img src="image/user 2.png" alt="user" class="user">
-            <div class="cart-container">
-                <div style="position: relative">
-                    <img src="image/cart (1) 2.png" alt="cart" class="cart">
-                    <div id="count"
-                         style="position: absolute;
-                     right: 0;top: 40px;
+        <div class="cart-container">
+            <div style="position: relative">
+                <img src="image/cart (1) 2.png" alt="cart" class="cart">
+                <div id="count"
+                     style="position: absolute;
+                     right: 0;top: 30px;
                      border-radius: 8px;
                      padding: 2px 1px;
                      font-size: 14px;
                      background-color: red;
                        text-align: center;"
-                    >
-                    </div>
+                >
                 </div>
             </div>
-            <script>
-                const count=document.getElementById("count")
-                count.innerText=2
-            </script>
-        <img src="image/world 2.png" alt="language"class=language>
         </div>
+        <script>
+            const count = document.getElementById("count")
+            count.innerText = 2
+        </script>
+        <img src="image/world 2.png" alt="language" class=language>
+    </div>
+</div>
 
-         <div class="navigationbar"> 
-            <ul>
-                <li><a href=index.html>Home</a></li>
-                <li>Games</li>
-                <li>Consoles</li>
-                <li>Other</li> 
-                <li>Contact us</li>
-              </ul>
-         </div>
-    
-    </header>
+<div class="navigationbar">
+    <ul>
+        <li><a href=index.html>Home</a></li>
+        <li>Games</li>
+        <li>Consoles</li>
+        <li>Other</li>
+        <li>Contact us</li>
+    </ul>
+</div>
     <div class="title">
         <p>Home / Best Seller / Xbox One X (CYV-00015) / checkout</p>
     </div>
@@ -75,16 +74,23 @@
                     const decreaseButton = document.getElementById('decrease');
                     const increaseButton = document.getElementById('increase');
                     const quantityInput = document.getElementById('quantity');
+                    const totalPrice=document.querySelector('.total-price>p')
                     decreaseButton.addEventListener('click', () => {
+                        const quantityInput1 = document.getElementById('quantity1');
+                        let currentValue1 = parseInt(quantityInput1.value);
                         let currentValue = parseInt(quantityInput.value);
                         if (currentValue > 1) {
                             quantityInput.value = currentValue - 1;
+                            totalPrice.innerHTML='$'+ (parseFloat(((currentValue -1)*977.99).toFixed(2))+currentValue1*539)
                         }
                     });
 
                     increaseButton.addEventListener('click', () => {
+                        const quantityInput1 = document.getElementById('quantity1');
+                        let currentValue1 = parseInt(quantityInput1.value);
                         let currentValue = parseInt(quantityInput.value);
                         quantityInput.value = currentValue + 1;
+                        totalPrice.innerHTML='$'+ (parseFloat(((currentValue + 1)*977.99).toFixed(2))+currentValue1*539)
                     });
                 });
 
@@ -105,16 +111,24 @@
                         const decreaseButton = document.getElementById('decrease1');
                         const increaseButton = document.getElementById('increase1');
                         const quantityInput = document.getElementById('quantity1');
+
+                        const totalPrice=document.querySelector('.total-price>p')
                         decreaseButton.addEventListener('click', () => {
+                            const quantityInput1 = document.getElementById('quantity');
+                            let currentValue1 = parseInt(quantityInput1.value);
                             let currentValue = parseInt(quantityInput.value);
                             if (currentValue > 1) {
                                 quantityInput.value = currentValue - 1;
+                                totalPrice.innerHTML='$'+ (parseFloat(((currentValue -1)*539).toFixed(2))+currentValue1*977.99)
                             }
                         });
 
                         increaseButton.addEventListener('click', () => {
+                            const quantityInput1 = document.getElementById('quantity');
+                            let currentValue1 = parseInt(quantityInput1.value);
                             let currentValue = parseInt(quantityInput.value);
                             quantityInput.value = currentValue + 1;
+                            totalPrice.innerHTML='$'+ (parseFloat(((currentValue + 1)*539).toFixed(2))+currentValue1*977.99)
                         });
                     });
 
@@ -135,15 +149,17 @@
             <p class="instructions">Taxes and shipping calculated at checkout</p>
     </div>
     <div class="button">
-        <button class="Checkout">Check out</button><br>
-        <p>-or use -</p>
-        <button type="button" class="paypal-button">
-            <img src="image/paypal.png" width="200">
-           </button>
-        <br>
-        <button type="button" class="apple-pay">
-            <img src="image/appleepau.png" width="200">
-           </button>
+        <div>
+            <a href="cart1.html"><button class="Checkout">Check out</button></a><br>
+            <p>-or use -</p>
+            <button type="button" class="paypal-button">
+                <img src="image/paypal.png" width="200">
+            </button>
+            <br>
+            <button type="button" class="apple-pay">
+                <img src="image/appleepau.png" width="200">
+            </button>
+        </div>
     </div>
     <div class="continue-shopping">
         <h3><a href=index.html>Continue shopping</a></h3>
