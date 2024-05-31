@@ -81,7 +81,7 @@ height: 35px;
 }
 
 .navigationbar{
-display: center;
+display: flex;
 margin-top: 20px;
 width: 1368px;
 height: 60px;
@@ -91,11 +91,11 @@ border-radius: 20px;
 }
 
 ul {
-    padding-left: 150px;
+    padding-left: 130px;
 }
 
 li{
-    margin-top: 15px;
+    margin-top: 10px;
     margin-right: 155px;
     font-family: 'Inder';
     font-size: 24px ;
@@ -1593,16 +1593,6 @@ padding-bottom: 20px;
         cursor: pointer;
     }
     
-    .paypal {
-        background-color: #ffc439;
-        color: #000;
-    }
-    
-    .apple-pay {
-        background-color: #000;
-        color: #fff;
-    }
-    
     .existing-customer, .order-item, .coupon, .totals {
         margin: 20px 0;
     }
@@ -1701,7 +1691,7 @@ padding-bottom: 20px;
     border-radius: 5px;
     cursor: pointer;
     font-family: 'Inter'; /* 修改字体 */
-    font-size: 24px; /* 调整字体大小*/
+    font-size: 14px; /* 调整字体大小*/
     font-weight: lighter; /* 调整字体粗细 */
     
 }
