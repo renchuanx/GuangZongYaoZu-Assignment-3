@@ -5,176 +5,318 @@
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple HTML Page</title>
-    
+    <style>
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #d2d2d2;
+            border: 1px solid #d2d2d2;
+            color: #000;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            text-align: center;
+        }
+
+        .tabs {
+            display: flex;
+        }
+
+        .tab, .tabactive {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .tabactive {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .tab {
+            background-color: #f1f1f1;
+            color: black;
+        }
+
+        .content {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .content.active {
+            display: block;
+        }
+    </style>
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Arbutus&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-    
+
 </style>
 </style>
 <body>
-    <header>
+<header>
 
-        <div class="searchbar">
-        <img src="image/shoptitle_300x@2x.avif" alt="logo" class="logo">
+    <div class="searchbar">
+        <a href="index.html"><img src="image/shoptitle_300x@2x.avif" alt="logo" class="logo"></a>
         <input type="text" placeholder="Search..">
         <img src="image/image 18.png" alt="search icon" class="search">
         <img src="image/user 2.png" alt="user" class="user">
-        <img src="image/cart (1) 2.png" alt="cart" class="cart">
-        <img src="image/world 2.png" alt="language"class=language>
-        </div>
-
-         <div class="navigationbar"> 
-            <ul>
-                <li><a href=index.html>Home</a></li>
-                <li>Games</li>
-                <li>Consoles</li>
-                <li>Other</li> 
-                <li>Contact us</li>
-              </ul>
-         </div>
-    
-    </header>
-    <div class="title">
-        <p>Home / Best Seller / Xbox One X</p>
-    </div>
-    <div class="productdetail">
-        <h3>Nintendo Switch Console OLED Model (White)</h3>
-        <div class="productinfo">
-        <img src="image/product2.png" alt="Xbox One X">
-        <div class="Horizon">
-        <div class="price">
-            <p>Price:</p>
-            <h4>$977.99</h4>
-        </div>
-        <div class="quantity-container">
-            <p>Quantity:</p>
-            <div class="button">
-                <button class="quantity-button decrease">▼</button>
-                <input type="number" id="quantity" name="quantity" value="1" min="1">
-                <button class="quantity-button increase">▲</button>
+        <div class="cart-container">
+            <div style="position: relative">
+                <img src="image/cart (1) 2.png" alt="cart" class="cart">
+                <div id="count"
+                     style="position: absolute;
+                     right: 0;top: 40px;
+                     border-radius: 8px;
+                     padding: 2px 1px;
+                     font-size: 14px;
+                     background-color: red;
+                       text-align: center;"
+                >
+                </div>
             </div>
         </div>
-        <div class="cartandbuy">
-            <img src="image/Star 20.png">
-            <button class="add-to-cart"><a href=checkout2.html>ADD TO CART</a></button>
+        <script>
+            const count = document.getElementById("count")
+            count.innerText = 0
+        </script>
+        <img src="image/world 2.png" alt="language" class=language>
+    </div>
+
+    <div class="navigationbar">
+        <ul>
+            <li><a href=index.html>Home</a></li>
+            <li>Games</li>
+            <li>Consoles</li>
+            <li>Other</li>
+            <li>Contact us</li>
+        </ul>
+    </div>
+
+</header>
+<div class="title">
+    <p>Home / Best Seller / Xbox One X</p>
+</div>
+<div class="productdetail">
+    <h3>Nintendo Switch Console OLED Model (White)</h3>
+    <div class="productinfo">
+        <img src="image/product2.png" alt="Xbox One X">
+        <div class="Horizon">
+            <div class="price">
+                <p>Price:</p>
+                <h4>$977.99</h4>
+            </div>
+            <div id="popup" class="popup">
+                <img style="margin: 10px 30px 0 50px;width: 120px;" src="icon/minimum.png"/>
+                <p/>
+                Minimum quantity 1
+            </div>
+            <div class="quantity-container">
+                <p>Quantity:</p>
+                <div class="button">
+                    <button id="decrease" class="quantity-button decrease">▼</button>
+                    <input type="number" id="quantity" name="quantity" value="1" min="1">
+                    <button id="increase" class="quantity-button increase">▲</button>
+
+                    <script>
+                        document.addEventListener('DOMContentLoaded', (event) => {
+                            const decreaseButton = document.getElementById('decrease');
+                            const increaseButton = document.getElementById('increase');
+                            const quantityInput = document.getElementById('quantity');
+                            var popup = document.getElementById('popup');
+                            decreaseButton.addEventListener('click', () => {
+                                let currentValue = parseInt(quantityInput.value);
+                                if (currentValue > 1) {
+                                    quantityInput.value = currentValue - 1;
+                                } else {
+                                    popup.style.display = 'block';
+                                    setTimeout(function () {
+                                        popup.style.display = 'none';
+                                    }, 1500);
+                                }
+                            });
+
+                            increaseButton.addEventListener('click', () => {
+                                let currentValue = parseInt(quantityInput.value);
+                                quantityInput.value = currentValue + 1;
+                            });
+                        });
+
+                    </script>
+                </div>
+            </div>
+            <div class="cartandbuy">
+                <img src="image/Star 20.png">
+                <button class="add-to-cart"><a href=checkout2.html>ADD TO CART</a></button>
+            </div>
+            <img id="icons" src="image/shared icon.png">
         </div>
-        <img id="icons"src="image/shared icon.png">
-        </div>
-        </div>
-        
     </div>
-    <div class="detailpicture">
-        <img src="image/detailed2.1.png">
-        <img src="image/detailed2.2.png">
-        <img src="image/detailed2.3.png">
+
+</div>
+<div class="detailpicture">
+    <img src="image/detailed2.1.png">
+    <img src="image/detailed2.2.png">
+    <img src="image/detailed2.3.png">
+</div>
+<div class="tabs">
+    <button class="tabactive" onclick="showContent('description')">Description</button>
+    <button class="tab" onclick="showContent('product-detail')">Product Detail</button>
+    <button class="tab" onclick="showContent('warranty-info')">Warranty Information</button>
+</div>
+<div style="display:flex;margin-top: 100px;margin-left:150px;">
+    <div id="description" class="content active">
+        <h2>Description</h2>
+        <p>This is the description content.</p>
     </div>
-    <div class="tabs">
-        <button class="tabactive">Description</button>
-        <button class="tab">Product Detail</button>
-        <button class="tab">Warranty Information</button>
+    <div id="product-detail" class="content">
+        <h2>Product Detail</h2>
+        <p>This is the product detail content.</p>
     </div>
-    <div class="description">
-        <h4>Description:</h4>
-        <p>For gaming on the go or at home, the Nintendo Switch OLED Model Console brings vibrant color to life with its vibrant 7-inch OLED screen.
-             Play your favorite Nintendo Switch games like a pro with the Joy-Con controllers featuring HD rumble and motion sensors. With 64GB of storage and a storage expansion slot, you'll have plenty of room for your game saves and downloads. 
-             Connect online to play multiplayer and access the Nintendo eShop for new games. With up to 9 hours of battery life, you can keep playing your favorite games on the go. Dock the console to enjoy Nintendo Switch games on your TV in Full HD. 
-             The adjustable kickstand and enhanced stereo speakers make gaming on the go a blast. At home or on the move, the Nintendo Switch OLED model takes gaming to the next level. The manufacturer's part number for this product is </p>
+    <div id="warranty-info" class="content">
+        <h2>Warranty Information</h2>
+        <p>This is the warranty information content.</p>
     </div>
-    <div class="related-products">
-        <h4>Related products</h4>
-        <div class="relatedpicture">
-            <img src="image/related2.1.png" alt="Product 2">
-            <img src="image/related2.2.png" alt="Product 3">
-        </div>
+</div>
+<script>
+    function showContent(id) {
+        // Remove 'active' class from all tab buttons
+        const tabs = document.querySelectorAll('.tabs .tab, .tabs .tabactive');
+        tabs.forEach(tab => {
+            tab.classList.remove('tabactive');
+            tab.classList.add('tab');
+        });
+
+        // Add 'active' class to the clicked tab button
+        const activeTab = document.querySelector(`button[onclick="showContent('${id}')"]`);
+        activeTab.classList.remove('tab');
+        activeTab.classList.add('tabactive');
+
+        // Hide all content
+        const contents = document.querySelectorAll('.content');
+        contents.forEach(content => {
+            content.classList.remove('active');
+        });
+
+        // Show the clicked content
+        const activeContent = document.getElementById(id);
+        activeContent.classList.add('active');
+    }
+
+</script>
+<div class="description">
+    <h4>Description:</h4>
+    <p>For gaming on the go or at home, the Nintendo Switch OLED Model Console brings vibrant color to life with its
+        vibrant 7-inch OLED screen.
+        Play your favorite Nintendo Switch games like a pro with the Joy-Con controllers featuring HD rumble and motion
+        sensors. With 64GB of storage and a storage expansion slot, you'll have plenty of room for your game saves and
+        downloads.
+        Connect online to play multiplayer and access the Nintendo eShop for new games. With up to 9 hours of battery
+        life, you can keep playing your favorite games on the go. Dock the console to enjoy Nintendo Switch games on
+        your TV in Full HD.
+        The adjustable kickstand and enhanced stereo speakers make gaming on the go a blast. At home or on the move, the
+        Nintendo Switch OLED model takes gaming to the next level. The manufacturer's part number for this product
+        is </p>
+</div>
+<div class="related-products">
+    <h4>Related products</h4>
+    <div class="relatedpicture">
+        <img src="image/related2.1.png" alt="Product 2">
+        <img src="image/related2.2.png" alt="Product 3">
     </div>
-    <div class="top-reviewed-items">
-        <h4>Top Reviewed items</h4>
-        <div class="reviewed-items-list">
-            <div class="section">
+</div>
+<div class="top-reviewed-items">
+    <h4>Top Reviewed items</h4>
+    <div class="reviewed-items-list">
+        <div class="section">
             <img src="image/top1.png" alt="Review 1">
             <img src="image/top2.png" alt="Review 2">
             <img src="image/top3.png" alt="Review 3">
-            </div>
-            <div class="section">
+        </div>
+        <div class="section">
             <br>
             <img src="image/top4.png" alt="Review 4">
             <img src="image/top5.png" alt="Review 5">
             <img src="image/top6.png" alt="Review 6">
-            </div>
         </div>
     </div>
-    <div class="review">
-        <h6>Latest Review</h6>
-        <img src="image/Group 166.png">
-    </div>
+</div>
+<div class="review">
+    <h6>Latest Review</h6>
+    <img src="image/Group 166.png">
+</div>
 
-    <footer>
-            
-        <div class="footer">
-            <div class="icons">
-                <div>
-                    <img src="image/box 1.png" alt="Shipping Internationally">
-                    <p>Shipping Internationally</p>
-                </div>
-                <div>
-                    <img src="image/return-box 1.png" alt="Satisfied or refunded">
-                    <p>Satisfied or refunded</p>
-                </div>
-                <div>
-                    <img src="image/customer-service 1.png" alt="Top-notch support">
-                    <p>Top-notch support</p>
-                </div>
-                <div>
-                    <img src="image/credit-card 1.png" alt="Secure payments">
-                    <p>Secure payments</p>
-                </div>
+<footer>
+
+    <div class="footer">
+        <div class="icons">
+            <div>
+                <img src="image/box 1.png" alt="Shipping Internationally">
+                <p>Shipping Internationally</p>
             </div>
+            <div>
+                <img src="image/return-box 1.png" alt="Satisfied or refunded">
+                <p>Satisfied or refunded</p>
+            </div>
+            <div>
+                <img src="image/customer-service 1.png" alt="Top-notch support">
+                <p>Top-notch support</p>
+            </div>
+            <div>
+                <img src="image/credit-card 1.png" alt="Secure payments">
+                <p>Secure payments</p>
+            </div>
+        </div>
 
-            <div class="footer-section">
-                <div class="about-us">
+        <div class="footer-section">
+            <div class="about-us">
                 <h3>About us</h3>
-                <img class="plus"src="image/plus.png">
-                </div>
-                <p>_______________________________________________________________________________________________________</p>
-                
+                <img class="plus" src="image/plus.png">
             </div>
-            <div class="footer-section">
-                <div class="services">
+            <p>
+                _______________________________________________________________________________________________________</p>
+
+        </div>
+        <div class="footer-section">
+            <div class="services">
                 <h3>Services</h3>
-                <img class="plus"src="image/plus.png">
-                </div>
-                <p>_______________________________________________________________________________________________________</p>
-               
+                <img class="plus" src="image/plus.png">
             </div>
-            <div class="subscribe">
-                <h2>Join us</h2>
-                <p>Subscribe now and be the first to know about Exclusive Offers - Deals <br>- Sales - New Releases and MORE!</p>
-                <input type="email" placeholder="Your email"><br>
-                <button>Subscribe</button>
-            </div>
-            <div class="footer-section">
-                <p>Follow us</p>
-                <div class="social">
-                    <img src="image/facebook 2.png" alt="Facebook">
-                    <img src="image/instagram 1.png" alt="Instagram">
-                </div>
-            </div>
-            <div class="footer-section">
-                <p>We Accept</p>
-                <div class="payment">
-                    <img src="image/PEYOAL.png" alt="PayPal">
-                    <img src="image/APPLE PAY.png" alt="Apple Pay">
-                </div>
-                <p>&copy; 2024 Games We Played</p>
+            <p>
+                _______________________________________________________________________________________________________</p>
+
+        </div>
+        <div class="subscribe">
+            <h2>Join us</h2>
+            <p>Subscribe now and be the first to know about Exclusive Offers - Deals <br>- Sales - New Releases and
+                MORE!</p>
+            <input type="email" placeholder="Your email"><br>
+            <button>Subscribe</button>
+        </div>
+        <div class="footer-section">
+            <p>Follow us</p>
+            <div class="social">
+                <img src="image/facebook 2.png" alt="Facebook">
+                <img src="image/instagram 1.png" alt="Instagram">
             </div>
         </div>
-   </div>
+        <div class="footer-section">
+            <p>We Accept</p>
+            <div class="payment">
+                <img src="image/PEYOAL.png" alt="PayPal">
+                <img src="image/APPLE PAY.png" alt="Apple Pay">
+            </div>
+            <p>&copy; 2024 Games We Played</p>
+        </div>
+    </div>
+    </div>
 
-  
-    
-    </footer>
+
+</footer>
 </body>
 </html>
