@@ -1718,16 +1718,16 @@ form button, .place-order {
     background-color: #ffffff;
     padding: 8px;
     border-radius: 5px;
-    font-family: 'Inter'; /* 修改字体 */
-    font-size: 24px; /* 调整字体大小*/
-    font-weight: lighter; /* 调整字体粗细 */
+    font-family: 'Inter'; 
+    font-size: 24px; 
+    font-weight: lighter; 
 }
 
 .customer-info {
     color: #000000;
-    font-family: 'Khula'; /* 修改字体 */
-    font-size: 13px; /* 调整字体大小*/
-    font-weight: light; /* 调整字体粗细 */
+    font-family: 'Khula'; 
+    font-size: 13px; 
+    font-weight: light; 
 }
 
 .edit {
@@ -1737,9 +1737,9 @@ form button, .place-order {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-family: 'Inter'; /* 修改字体 */
-    font-size: 14px; /* 调整字体大小*/
-    font-weight: lighter; /* 调整字体粗细 */
+    font-family: 'Inter'; 
+    font-size: 14px; 
+    font-weight: lighter; 
 
 }
 
@@ -1766,9 +1766,9 @@ form button, .place-order {
     cursor: pointer;
     margin-top: 20px;
     align-self: flex-start;
-    font-family: 'Monstserrat'; /* 修改字体 */
-    font-size: 22px; /* 调整字体大小*/
-    font-weight: semi bold; /* 调整字体粗细 */
+    font-family: 'Monstserrat'; 
+    font-size: 22px;
+    font-weight: semi bold; 
 }
 
 body {
