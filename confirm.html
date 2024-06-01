@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Page</title>
+    <link rel="stylesheet" href="css/mobile-style.css">
+
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Arbutus&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    @media (max-width: 410px) {
+        .popup {
+            top:800px;
+            left: 600px;
+        }
+    }
+</style>
+
+<body>
+<header>
+
+    <div>
+        <div class="searchbar">
+            <a href="index.html"><img src="image/shoptitle_300x@2x.avif" alt="logo" class="logo"></a>
+            <input type="text" placeholder="Search..">
+            <img src="image/image 18.png" alt="search icon" class="search">
+            <img src="image/user 2.png" alt="user" class="user">
+            <div class="cart-container">
+                <div style="position: relative">
+                    <img src="image/cart (1) 2.png" alt="cart" class="cart">
+                    <div id="count"
+                         style="position: absolute;
+                     right: 0;top: 30px;
+                     border-radius: 8px;
+                     padding: 2px 1px;
+                     font-size: 14px;
+                     background-color: red;
+                       text-align: center;"
+                    >
+                    </div>
+                </div>
+            </div>
+            <script>
+                const count = document.getElementById("count")
+                count.innerText = 0
+            </script>
+            <img src="image/world 2.png" alt="language" class=language>
+        </div>
+    </div>
+    <div>
+        <div class="searchbar_mobile">
+            <div style="display: flex;justify-content:space-between;width: 1200px;">
+                <a href="index.html">
+                    <img style="height: 120px;width: 500px" src="image/shoptitle_300x@2x.avif" alt="logo" class="logo"></a>
+                <div style="display: flex">
+                    <img src="image/user 2.png" style="height: 80px;width: 80px" alt="user" class="user">
+                    <div class="cart-container">
+                        <div style="position: relative">
+                            <img src="image/cart (1) 2.png" style="height: 80px;width: 80px" alt="cart" class="cart">
+                            <div id="count1"
+                                 style="position: absolute;
+                     right: 0;top: 30px;
+                     border-radius: 8px;
+                     padding: 4px 2px;
+                     font-size: 18px;
+                     background-color: red;
+                       text-align: center;"
+                            >
+                            </div>
+                        </div>
+                    </div>
+                    <img
+                            style="height: 80px;width: 80px"
+                            src="image/world 2.png" alt="language" class=language>
+                </div>
+            </div>
+
+            <script>
+                const count1 = document.getElementById("count1")
+                count1.innerText = 0
+            </script>
+            <div style="display: flex;width: 1200px;justify-content: space-between">
+                <img src="icon/menu.png" height="80" width="80"/>
+                <div style="display: flex">
+                    <input placeholder="Search..">
+                    <img src="image/image 18.png" alt="search icon" class="search">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="navigationbar">
+        <ul>
+            <li><a href=index.html>Home</a></li>
+            <li>Games</li>
+            <li>Consoles</li>
+            <li>Other</li>
+            <li>Contact us</li>
+        </ul>
+    </div>
+
+</header>
+<div class="confrimation">
+    <img class="confirme-icon" src="image/confrime.png">
+    <h1>Payment Successful</h1>
+    <div class="con-product1">
+        <img src="image/con1.png">
+        <h4>Xbox One X (CYV-00015)</h4>
+    </div>
+    <div class="con-product2">
+        <img src="image/con2.png">
+        <h4>Nintendo Switch Console OLED Model<br>(White)</h4>
+    </div>
+    <div class="detailed-info-con">
+        <div class="con-details">
+            <h6>Order summary:</h6>
+            <p>Subtotal: $1516.99<br>
+                Shipping cost: $0.00<br>
+                Tax:$0.00<br>
+                Total: AUD$1516.99</p>
+        </div>
+        <div class="con-details">
+            <h6>Order details:</h6>
+            <p>Payment amount: 1516.99<br>
+                Submission time: 17-04-24 17:16<br>
+                Payment method: visa<br>
+                Order number:102847384923<br>
+            </p>
+
+        </div>
+        <div class="con-details">
+            <h6>Shipping detail:</h6>
+            <p>
+                Consignee: Yilia xu<br>
+                Email: Yilia111@gmail.com<br>
+                Phone number: 0424851088<br>
+                Address:A’beckett st/1909/31,<br>
+                melbourne/victoria/3000/Australia
+            </p>
+        </div>
+    </div>
+    <div class="detailed-info-con-mobile">
+        <h6 style="font-size: 28px;margin: 10px 0">Order details:</h6>
+        <p>Payment amount: 1516.99 <br/>
+            Submission time: 17-04-24 17:16<br/>
+            Payment method: visa<br/>
+            Order number:102847384923<br/>
+            Consignee: Yilia xu<br/>
+            Email: Yilia111@gmail.com<br/>
+            Phone number: 0424851088<br/>
+            Address:A’beckett st/1909/31<br/>
+            melbourne/victoria/3000/Australia</p>
+    </div>
+    <button><a href=index.html>continue-shopping</a></button>
+</div>
+
+
+<footer>
+    <div class="footer">
+        <div class="icons">
+            <div>
+                <img src="image/box 1.png" alt="Shipping Internationally">
+                <p>Shipping Internationally</p>
+            </div>
+            <div>
+                <img src="image/return-box 1.png" alt="Satisfied or refunded">
+                <p>Satisfied or refunded</p>
+            </div>
+            <div>
+                <img src="image/customer-service 1.png" alt="Top-notch support">
+                <p>Top-notch support</p>
+            </div>
+            <div>
+                <img src="image/credit-card 1.png" alt="Secure payments">
+                <p>Secure payments</p>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <div class="about-us">
+                <h3>About us</h3>
+                <img class="plus" src="image/plus.png">
+            </div>
+            <p>
+                _______________________________________________________________________________________________________</p>
+
+        </div>
+        <div class="footer-section">
+            <div class="services">
+                <h3>Services</h3>
+                <img class="plus" src="image/plus.png">
+            </div>
+            <p>
+                _______________________________________________________________________________________________________</p>
+
+        </div>
+        <div class="subscribe">
+            <h2>Join us</h2>
+            <p>Subscribe now and be the first to know about Exclusive Offers - Deals <br>- Sales - New Releases and
+                MORE!</p>
+            <input type="email" placeholder="Your email"><br>
+            <button>Subscribe</button>
+        </div>
+        <div class="footer-section">
+            <p>Follow us</p>
+            <div class="social">
+                <img src="image/facebook 2.png" alt="Facebook">
+                <img src="image/instagram 1.png" alt="Instagram">
+            </div>
+        </div>
+        <div class="footer-section">
+            <p>We Accept</p>
+            <div class="payment">
+                <img src="image/PEYOAL.png" alt="PayPal">
+                <img src="image/APPLE PAY.png" alt="Apple Pay">
+            </div>
+            <p>&copy; 2024 Games We Played</p>
+        </div>
+    </div>
+    </div>
+
+
+</footer>
+</body>
+</html>

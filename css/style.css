@@ -619,8 +619,8 @@ a {
 
 .sort-button h6 {
     position: absolute;
-    margin-top: 10px;
-    left: 1230px;
+    left: 50px;
+    top: -50px;
     width: 9.30719rem;
     height: 2.1875rem;
     color: #000;
@@ -1309,7 +1309,7 @@ a {
 }
 
 .checkout-detail .number-button {
-    margin-left: 140px;
+    margin-left: 120px;
     margin-top: 160px;
     border-radius: 12px;
 }

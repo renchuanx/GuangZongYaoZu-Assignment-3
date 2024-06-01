@@ -301,9 +301,7 @@
         font-size: 24px !important;
 
     }
-    .sort-button h6 {
-        left: 1000px;
-    }
+
     .listproducts .stock{
         margin-left: 360px !important;
     }
@@ -592,9 +590,15 @@
     .delivery-options label{
         height: 64px;
     }
+    .totals{
+        display: none;
+    }
 }
 
 @media (min-width: 410px) {
+    .totals-mobile{
+        display: none;
+    }
     .detailed-info-con-mobile {
         display: none;
     }

@@ -12,14 +12,14 @@
     @import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Arbutus&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-    @media (max-width: 410px) {
 
+    @media (max-width: 410px) {
         body {
-            height: 1850px;
+            height: 1350px;
         }
         @media (max-width: 410px) {
             .popup {
-                top:800px;
+                top: 800px;
                 left: 600px;
             }
         }
@@ -56,7 +56,7 @@
     </div>
 </div>
 <div>
-    <div class="searchbar_mobile" >
+    <div class="searchbar_mobile">
         <div style="display: flex;justify-content:space-between;width: 1200px;">
             <a href="index.html">
                 <img style="height: 120px;width: 500px" src="image/shoptitle_300x@2x.avif" alt="logo" class="logo"></a>
@@ -90,7 +90,7 @@
         <div style="display: flex;width: 1200px;justify-content: space-between">
             <img src="icon/menu.png" height="80" width="80"/>
             <div style="display: flex">
-                <input  placeholder="Search..">
+                <input placeholder="Search..">
                 <img src="image/image 18.png" alt="search icon" class="search">
             </div>
         </div>
@@ -98,110 +98,122 @@
 
 </div>
 
-    <div class="navigationbar">
-        <ul>
-            <li><a href=index.html>Home</a></li>
-            <li>Games</li>
-            <li>Consoles</li>
-            <li>Other</li>
-            <li>Contact us</li>
-        </ul>
-    </div>
+<div class="navigationbar">
+    <ul>
+        <li><a href=index.html>Home</a></li>
+        <li>Games</li>
+        <li>Consoles</li>
+        <li>Other</li>
+        <li>Contact us</li>
+    </ul>
+</div>
 
-    <main>
-        <section class="checkout">
-            <h2>Check out</h2>
-            <p style="margin-bottom: 0">Check out faster with:</p>
-            <div class="checkout-options" >
-                <button class="paypal" style="background-color: unset">
-                    <img src="image/paypal-yellow-logo.png" alt="Paypal">
-                </button>
-                <button class="apple-pay" style="background-color: unset">
-                    <img src="image/apple-pay-black.png" alt="Apple Pay">
-                </button>
+<main>
+    <section class="checkout">
+        <h2>Check out</h2>
+        <p style="margin-bottom: 0">Check out faster with:</p>
+        <div class="checkout-options">
+            <button class="paypal" style="background-color: unset">
+                <img src="image/paypal-yellow-logo.png" alt="Paypal">
+            </button>
+            <button class="apple-pay" style="background-color: unset">
+                <img src="image/apple-pay-black.png" alt="Apple Pay">
+            </button>
+        </div>
+        <h2>Exist customer:</h2>
+        <div class="existing-customer">
+            <div class="customer-info">
+                <p>
+                    <svg t="1717073059081" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                         xmlns="http://www.w3.org/2000/svg" p-id="19246" width="18" height="18">
+                        <path d="M501.937582 545.097053c147.891962 0 268.231366-118.534055 268.223274-264.288929 0-145.746783-120.330301-264.28994-268.222263-264.28994-147.890951 0-268.221252 118.584625-268.221252 264.28994C233.71633 426.520519 354.046631 545.097053 501.937582 545.097053zM612.471463 570.546911 411.497184 570.546911c-186.760063 0-338.664249 149.569875-338.664249 333.472733l0 19.794109c0 96.139636 149.47278 96.139636 338.664249 96.139636l200.974278 0c181.747565 0 338.694591 0 338.694591-96.139636l0-19.794109C951.164031 720.158252 799.235571 570.546911 612.471463 570.546911z"
+                              fill="#272636" p-id="19247"></path>
+                    </svg>
+                    <strong style="border-bottom: 1px solid #000">Yilia Xu</strong></p>
+                <p>0424 851 088</p>
+                <p>A’beckett St/1909/31</p>
+                <p>melbourne/victoria/3000/Australia</p>
             </div>
-            <h2>Exist customer:</h2>
-            <div class="existing-customer">
-                <div class="customer-info">
-                    <p>
-                        <svg t="1717073059081" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="19246" width="18" height="18"><path d="M501.937582 545.097053c147.891962 0 268.231366-118.534055 268.223274-264.288929 0-145.746783-120.330301-264.28994-268.222263-264.28994-147.890951 0-268.221252 118.584625-268.221252 264.28994C233.71633 426.520519 354.046631 545.097053 501.937582 545.097053zM612.471463 570.546911 411.497184 570.546911c-186.760063 0-338.664249 149.569875-338.664249 333.472733l0 19.794109c0 96.139636 149.47278 96.139636 338.664249 96.139636l200.974278 0c181.747565 0 338.694591 0 338.694591-96.139636l0-19.794109C951.164031 720.158252 799.235571 570.546911 612.471463 570.546911z" fill="#272636" p-id="19247"></path></svg>
-                       <strong style="border-bottom: 1px solid #000">Yilia Xu</strong></p>
-                    <p>0424 851 088</p>
-                    <p>A’beckett St/1909/31</p>
-                    <p>melbourne/victoria/3000/Australia</p>
-                </div>
-                <button class="edit">Edit</button>
+            <button class="edit">Edit</button>
+        </div>
+        <h2>Customer</h2>
+        <form>
+            <label for="email">Email</label>
+            <input class="input_email" type="email" id="email" name="email">
+            <div class="newsletter">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Subscribe to our newsletters</label>
             </div>
-            <h2>Customer</h2>
-            <form >
-                <label for="email">Email</label>
-                <input class="input_email" type="email" id="email" name="email">
-                <div class="newsletter">
-                    <input type="checkbox" id="newsletter" name="newsletter">
-                    <label for="newsletter">Subscribe to our newsletters</label>
-                </div>
-                <button class="input_email_submit" type="submit">Continue</button>
-            </form>
-        </section>
-        <aside class="order-summary">
-            <h2>Order Summary</h2>
-            <div class="order-item">
-                <img src="image/p1.png" style="width: 30%" alt="item.png"><span style="font-size: 12px">Xbox One X (CYV-00015)</span>
-                <p>$977.99</p>
-            </div>
-            <div class="order-item">
-                <img src="image/2.1.png" style="width: 30%" alt="item.png"><span style="font-size: 12px">Nintendo Switch Console OLED Model (White)</span>
-                <p>$539.00</p>
-            </div>
-            <div class="coupon">
-                <label for="coupon">Coupon/Gift Certificate</label>
-                <input type="text" id="coupon" name="coupon">
-                <button>Apply</button>
-            </div>
-            <div class="totals">
-                <span style="float: left"><p>Subtotal:</p><p>Total:</p><p>Shipping:</p></span>
-                <span style="float: right"><p>$1516.99</p><p>Enter shipping address</p> <p>AUD $1516.99</p></span>
-            </div>
-            <a href="./confirm.htm"><button class="place-order" style="width: 100%;display: inline-block">Place Order</button></a>
-        </aside>
-    </main>
+            <button class="input_email_submit" type="submit">Continue</button>
+        </form>
+    </section>
+    <aside class="order-summary">
+        <h2>Order Summary</h2>
+        <div class="order-item">
+            <img src="image/p1.png" style="width: 30%" alt="item.png"><span style="font-size: 12px">Xbox One X (CYV-00015)</span>
+            <p>$977.99</p>
+        </div>
+        <div class="order-item">
+            <img src="image/2.1.png" style="width: 30%" alt="item.png"><span style="font-size: 12px">Nintendo Switch Console OLED Model (White)</span>
+            <p>$539.00</p>
+        </div>
+        <div class="coupon">
+            <label for="coupon">Coupon/Gift Certificate</label>
+            <input type="text" id="coupon" name="coupon">
+            <button>Apply</button>
+        </div>
+        <div class="totals">
+            <p><span style="margin-right: 10px">Subtotal:</span>
+                $1516.99</p>
+            <p><span style="margin-right: 10px">Total:</span>Enter shipping address</p>
+            <p><span style="margin-right: 10px">Shipping:</span> AUD $1516.99</p>
+        </div>
+        <div class="totals-mobile">
+            <span style="float: left"><p>Subtotal:</p><p>Total:</p><p>Shipping:</p></span>
+            <span style="float: right"><p>$1516.99</p><p>Enter shipping address</p> <p>AUD $1516.99</p></span>
+        </div>
+        <a href="./confirm.html">
+            <button class="place-order" style="width: 100%;display: inline-block">Place Order</button>
+        </a>
+    </aside>
+</main>
 
-    <script>
-        if ('WebSocket' in window) {
-            (function () {
-                function refreshCSS() {
-                    var sheets = [].slice.call(document.getElementsByTagName("link"));
-                    var head = document.getElementsByTagName("head")[0];
-                    for (var i = 0; i < sheets.length; ++i) {
-                        var elem = sheets[i];
-                        var parent = elem.parentElement || head;
-                        parent.removeChild(elem);
-                        var rel = elem.rel;
-                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-                        }
-                        parent.appendChild(elem);
+<script>
+    if ('WebSocket' in window) {
+        (function () {
+            function refreshCSS() {
+                var sheets = [].slice.call(document.getElementsByTagName("link"));
+                var head = document.getElementsByTagName("head")[0];
+                for (var i = 0; i < sheets.length; ++i) {
+                    var elem = sheets[i];
+                    var parent = elem.parentElement || head;
+                    parent.removeChild(elem);
+                    var rel = elem.rel;
+                    if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                        var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                        elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
                     }
+                    parent.appendChild(elem);
                 }
+            }
 
-                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-                var address = protocol + window.location.host + window.location.pathname + '/ws';
-                var socket = new WebSocket(address);
-                socket.onmessage = function (msg) {
-                    if (msg.data == 'reload') window.location.reload();
-                    else if (msg.data == 'refreshcss') refreshCSS();
-                };
-                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                    console.log('Live reload enabled.');
-                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-                }
-            })();
-        } else {
-            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-        }
-        // ]]>
-    </script>
+            var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+            var address = protocol + window.location.host + window.location.pathname + '/ws';
+            var socket = new WebSocket(address);
+            socket.onmessage = function (msg) {
+                if (msg.data == 'reload') window.location.reload();
+                else if (msg.data == 'refreshcss') refreshCSS();
+            };
+            if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                console.log('Live reload enabled.');
+                sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+            }
+        })();
+    } else {
+        console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+    }
+    // ]]>
+</script>
 
 <main>
     <section class="form-section">
@@ -328,10 +340,18 @@
                 <button>Apply</button>
             </div>
             <div class="totals">
+                <p><span style="margin-right: 10px">Subtotal:</span>
+                    $1516.99</p>
+                <p><span style="margin-right: 10px">Total:</span>Enter shipping address</p>
+                <p><span style="margin-right: 10px">Shipping:</span> AUD $1516.99</p>
+            </div>
+            <div class="totals-mobile">
                 <span style="float: left"><p>Subtotal:</p><p>Total:</p><p>Shipping:</p></span>
                 <span style="float: right"><p>$1516.99</p><p>Enter shipping address</p> <p>AUD $1516.99</p></span>
             </div>
-            <a href="./confirm.htm"><button class="place-order" style="width: 100%;display: inline-block">Place Order</button></a>
+            <a href="confirm.html">
+                <button class="place-order" style="width: 100%;display: inline-block">Place Order</button>
+            </a>
         </aside>
 </main>
 </body>
