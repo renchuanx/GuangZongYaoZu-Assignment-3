@@ -1,8 +1,8 @@
 body {
     margin: 0;
-    padding: 0;
     background-color: #101117;
     font-size: 16px;
+    padding: 0;
 }
 
 .searchbar {
@@ -10,7 +10,6 @@ body {
     margin: 0 auto;
     width: 1200px;
     height: 7rem;
-
 }
 
 .logo {
@@ -147,7 +146,10 @@ a {
     text-align: center;
 
 }
-
+.bestsellers{
+    width: 1200px;
+    margin: 0 auto;
+}
 .bestsellers h3 {
     text-align: center;
     font-family: 'Arbutus';
@@ -233,7 +235,6 @@ a {
     font-weight: 400;
     text-align: center;
 }
-
 .FeaturedCollection h3 {
     text-align: center;
     font-family: 'Arbutus';
@@ -245,10 +246,10 @@ a {
 }
 
 .FeaturedCollection {
-    margin-top: 100px;
-    width: 100%;
 
-    white-space: nowrap;
+    width: 1200px;
+    margin:  100px auto 0;
+
 }
 
 .items-container {
@@ -309,6 +310,10 @@ a {
     text-align: center;
 }
 
+.LatestReview{
+    width: 1200px;
+    margin: 0 auto;
+}
 
 .LatestReview h3 {
     text-align: center;
@@ -351,7 +356,10 @@ a {
 
 }
 
-
+.giftcard{
+    width: 1200px;
+    margin:  0 auto;
+}
 .giftcard h3 {
     text-align: center;
     font-family: 'Arbutus';
@@ -457,12 +465,12 @@ a {
 }
 
 .subscribe {
-    display: center;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .subscribe h2 {
     text-align: center;
-    margin-top: 120px;
     font-family: 'Arbutus';
     font-style: normal;
     font-weight: 400;
@@ -485,7 +493,7 @@ a {
 }
 
 .subscribe input {
-    margin-left: 28%;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     color: #B8B8B8;
@@ -499,7 +507,8 @@ a {
 }
 
 .subscribe button {
-    margin-left: 41%;
+    margin: 0 auto;
+    width: 185px;
     display: flex;
     justify-content: center;
     color: #000;
@@ -508,7 +517,6 @@ a {
     font-style: normal;
     font-weight: 400;
     line-height: 0.75rem;
-    display: inline-flex;
     height: 3.75rem;
     padding: 2rem 4rem 2rem 4rem;
     align-items: center;
@@ -540,6 +548,7 @@ a {
 
 .title {
     width: 1200px;
+
     margin: 0 auto;
     padding-top: 10px;
     padding-bottom: 20px;
@@ -558,7 +567,7 @@ a {
 }
 
 .title h3 {
-
+    text-align: center;
     color: #FFF;
     font-family: Arbutus;
     font-size: 2.5rem;
@@ -611,7 +620,7 @@ a {
 .sort-button h6 {
     position: absolute;
     margin-top: 10px;
-    left: 1130px;
+    left: 1230px;
     width: 9.30719rem;
     height: 2.1875rem;
     color: #000;
@@ -621,7 +630,6 @@ a {
 }
 
 .filter-button img {
-
     padding-top: 5px;
     width: 3rem;
     height: 3em;
@@ -650,6 +658,13 @@ a {
     width: 1200px;
     display: flex;
     flex-wrap: nowrap;
+}
+.listproducts h6{
+    margin: 20px 0;
+}
+.listproducts p{
+    font-size: 12px !important;
+
 }
 
 .listproducts .product {
@@ -827,12 +842,17 @@ a {
     width: 200px;
     margin-left: 180px;
     margin-top: 35px;
+    align-items: center;
+    justify-content: center;
 
 }
+
 .quantity-container1 .button {
     width: 200px;
     margin-left: 180px;
     margin-top: 35px;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -956,9 +976,10 @@ a {
 
 .tabs—content {
     width: 1080px;
-   margin: 0 auto;
+    margin: 0 auto;
 
 }
+
 .description {
     width: 1080px;
     margin: 80px auto 0;
@@ -1146,7 +1167,7 @@ a {
     font-size: 1.3rem;
     font-style: normal;
     font-weight: 700;
-    margin-left: 10px;
+    margin-left: 30px;
     margin-right: 30px;
     width: 4rem;
     height: 4rem;
@@ -1176,7 +1197,6 @@ a {
 .cartandbuy1 .arrival-notification :hover:not(.active) {
     background-color: black;
 }
-
 
 
 #icons1 {
@@ -1248,7 +1268,7 @@ a {
 
 .checkout .checkout-detail {
     margin-top: 50px;
-    width: 75em;
+    width: 1140px;
     height: 15.375rem;
     border-radius: 0.3125rem;
     background: linear-gradient(180deg, #E7E6E6 0%, #FFF 100%);
@@ -1266,7 +1286,8 @@ a {
 
 .checkout .checkout-detail h4 {
     margin-top: 40px;;
-    margin-left: 60px;
+    margin-left: 30px;
+
     color: #000;
     font-family: Inter;
     font-size: 1.5625rem;
@@ -1277,7 +1298,7 @@ a {
 
 .checkout-detail .price {
     margin-top: 90px;;
-    margin-left: 60px;
+    margin-left: 30px;
     color: #000;
     font-family: Inter;
     font-size: 1.875rem;
@@ -1288,13 +1309,13 @@ a {
 }
 
 .checkout-detail .number-button {
-
-
-    margin-left: 180px;
+    margin-left: 140px;
     margin-top: 160px;
     border-radius: 12px;
+}
 
-
+.horizon {
+    width: 400px;
 }
 
 .checkout-detail button {
@@ -1322,9 +1343,10 @@ a {
 
 .estimate-time {
     margin: 40px auto 0;
+    transform: translate(-3%, 0);
     display: flex;
     flex-wrap: wrap;
-    width: 75em;
+    width: 1140px;
     height: 6.6875rem;
     border-radius: 0.5rem;
     background: linear-gradient(180deg, #E7E6E6 0%, #FFF 100%);
@@ -1453,12 +1475,16 @@ a {
 
 .continue-shopping {
     margin-top: 10px;
-    margin-left: 1070px;
+    width: 1200px;
+    display: flex;
+    justify-content:right ;
     color: #FFF;
     font-family: Inter;
     font-size: 1.5rem;;
     text-decoration-line: underline;
-
+}
+.continue-shopping h3{
+    margin-right: 60px;
 }
 
 .confrimation {
@@ -1541,7 +1567,7 @@ a {
 }
 
 .confrimation button {
-    margin: 100px 0 100px 550px;
+    margin: 100px 0 100px 500px;
     color: #FFF;
     font-family: Inter;
     font-size: 1.125rem;
@@ -1718,16 +1744,16 @@ form button, .place-order {
     background-color: #ffffff;
     padding: 8px;
     border-radius: 5px;
-    font-family: 'Inter'; 
-    font-size: 24px; 
-    font-weight: lighter; 
+    font-family: 'Inter'; /* 修改字体 */
+    font-size: 24px; /* 调整字体大小*/
+    font-weight: lighter; /* 调整字体粗细 */
 }
 
 .customer-info {
     color: #000000;
-    font-family: 'Khula'; 
-    font-size: 13px; 
-    font-weight: light; 
+    font-family: 'Khula'; /* 修改字体 */
+    font-size: 13px; /* 调整字体大小*/
+    font-weight: light; /* 调整字体粗细 */
 }
 
 .edit {
@@ -1737,9 +1763,9 @@ form button, .place-order {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-family: 'Inter'; 
-    font-size: 14px; 
-    font-weight: lighter; 
+    font-family: 'Inter'; /* 修改字体 */
+    font-size: 14px; /* 调整字体大小*/
+    font-weight: lighter; /* 调整字体粗细 */
 
 }
 
@@ -1766,9 +1792,9 @@ form button, .place-order {
     cursor: pointer;
     margin-top: 20px;
     align-self: flex-start;
-    font-family: 'Monstserrat'; 
-    font-size: 22px;
-    font-weight: semi bold; 
+    font-family: 'Monstserrat'; /* 修改字体 */
+    font-size: 22px; /* 调整字体大小*/
+    font-weight: semi bold; /* 调整字体粗细 */
 }
 
 body {

@@ -5,43 +5,98 @@
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple HTML Page</title>
+    <link rel="stylesheet" href="css/mobile-style.css">
 
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Arbutus&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    @media (max-width: 410px) {
+
+        body {
+            height: 1850px;
+        }
+        @media (max-width: 410px) {
+            .popup {
+                top:800px;
+                left: 600px;
+            }
+        }
+    }
 </style>
 </style>
 <body>
-    <div>
-        <div class="searchbar">
-            <a href="index.html"><img src="image/shoptitle_300x@2x.avif" alt="logo" class="logo"></a>
-            <input type="text" placeholder="Search..">
-            <img src="image/image 18.png" alt="search icon" class="search">
-            <img src="image/user 2.png" alt="user" class="user">
-            <div class="cart-container">
-                <div style="position: relative">
-                    <img src="image/cart (1) 2.png" alt="cart" class="cart">
-                    <div id="count"
-                         style="position: absolute;
+<div>
+    <div class="searchbar">
+        <a href="index.html"><img src="image/shoptitle_300x@2x.avif" alt="logo" class="logo"></a>
+        <input type="text" placeholder="Search..">
+        <img src="image/image 18.png" alt="search icon" class="search">
+        <img src="image/user 2.png" alt="user" class="user">
+        <div class="cart-container">
+            <div style="position: relative">
+                <img src="image/cart (1) 2.png" alt="cart" class="cart">
+                <div id="count"
+                     style="position: absolute;
                      right: 0;top: 30px;
                      border-radius: 8px;
                      padding: 2px 1px;
                      font-size: 14px;
                      background-color: red;
                        text-align: center;"
-                    >
-                    </div>
+                >
                 </div>
             </div>
-            <script>
-                const count = document.getElementById("count")
-                count.innerText = 0
-            </script>
-            <img src="image/world 2.png" alt="language" class=language>
+        </div>
+        <script>
+            const count = document.getElementById("count")
+            count.innerText = 0
+        </script>
+        <img src="image/world 2.png" alt="language" class=language>
+    </div>
+</div>
+<div>
+    <div class="searchbar_mobile" >
+        <div style="display: flex;justify-content:space-between;width: 1200px;">
+            <a href="index.html">
+                <img style="height: 120px;width: 500px" src="image/shoptitle_300x@2x.avif" alt="logo" class="logo"></a>
+            <div style="display: flex">
+                <img src="image/user 2.png" style="height: 80px;width: 80px" alt="user" class="user">
+                <div class="cart-container">
+                    <div style="position: relative">
+                        <img src="image/cart (1) 2.png" style="height: 80px;width: 80px" alt="cart" class="cart">
+                        <div id="count1"
+                             style="position: absolute;
+                     right: 0;top: 30px;
+                     border-radius: 8px;
+                     padding: 4px 2px;
+                     font-size: 18px;
+                     background-color: red;
+                       text-align: center;"
+                        >
+                        </div>
+                    </div>
+                </div>
+                <img
+                        style="height: 80px;width: 80px"
+                        src="image/world 2.png" alt="language" class=language>
+            </div>
+        </div>
+
+        <script>
+            const count1 = document.getElementById("count1")
+            count1.innerText = 0
+        </script>
+        <div style="display: flex;width: 1200px;justify-content: space-between">
+            <img src="icon/menu.png" height="80" width="80"/>
+            <div style="display: flex">
+                <input  placeholder="Search..">
+                <img src="image/image 18.png" alt="search icon" class="search">
+            </div>
         </div>
     </div>
+
+</div>
 
     <div class="navigationbar">
         <ul>
@@ -78,14 +133,14 @@
                 <button class="edit">Edit</button>
             </div>
             <h2>Customer</h2>
-            <form>
+            <form >
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email">
+                <input class="input_email" type="email" id="email" name="email">
                 <div class="newsletter">
                     <input type="checkbox" id="newsletter" name="newsletter">
                     <label for="newsletter">Subscribe to our newsletters</label>
                 </div>
-                <button type="submit">Continue</button>
+                <button class="input_email_submit" type="submit">Continue</button>
             </form>
         </section>
         <aside class="order-summary">
@@ -112,7 +167,6 @@
     </main>
 
     <script>
-
         if ('WebSocket' in window) {
             (function () {
                 function refreshCSS() {
@@ -258,6 +312,27 @@
                 </label>
             </div>
         </section>
+        <aside class="order-summary-mobile">
+            <h2>Order Summary</h2>
+            <div class="order-item">
+                <img src="image/p1.png" style="width: 30%" alt="item.png"><span style="font-size: 12px">Xbox One X (CYV-00015)</span>
+                <p>$977.99</p>
+            </div>
+            <div class="order-item">
+                <img src="image/2.1.png" style="width: 30%" alt="item.png"><span style="font-size: 12px">Nintendo Switch Console OLED Model (White)</span>
+                <p>$539.00</p>
+            </div>
+            <div class="coupon">
+                <label for="coupon">Coupon/Gift Certificate</label>
+                <input type="text" id="coupon" name="coupon">
+                <button>Apply</button>
+            </div>
+            <div class="totals">
+                <span style="float: left"><p>Subtotal:</p><p>Total:</p><p>Shipping:</p></span>
+                <span style="float: right"><p>$1516.99</p><p>Enter shipping address</p> <p>AUD $1516.99</p></span>
+            </div>
+            <a href="./confirm.htm"><button class="place-order" style="width: 100%;display: inline-block">Place Order</button></a>
+        </aside>
 </main>
 </body>
 </html>

@@ -21,7 +21,17 @@
             z-index: 1000;
             text-align: center;
         }
+        @media (max-width: 410px) {
+            .popup {
+                top:800px;
+                left: 600px;
+            }
+        }
+        body {
+            height: 4500px!important;
+        }
     </style>
+    <link rel="stylesheet" href="css/mobile-style.css">
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
@@ -31,6 +41,7 @@
 </style>
 </style>
 <body>
+
     <div>
         <div class="searchbar">
             <a href="index.html"><img src="image/shoptitle_300x@2x.avif" alt="logo" class="logo"></a>
@@ -60,7 +71,48 @@
             <img src="image/world 2.png" alt="language" class=language>
         </div>
     </div>
+    <div>
+        <div class="searchbar_mobile" >
+            <div style="display: flex;justify-content:space-between;width: 1200px;">
+                <a href="index.html">
+                    <img style="height: 120px;width: 500px" src="image/shoptitle_300x@2x.avif" alt="logo" class="logo"></a>
+                <div style="display: flex">
+                    <img src="image/user 2.png" style="height: 80px;width: 80px" alt="user" class="user">
+                    <div class="cart-container">
+                        <div style="position: relative">
+                            <img src="image/cart (1) 2.png" style="height: 80px;width: 80px" alt="cart" class="cart">
+                            <div id="count1"
+                                 style="position: absolute;
+                     right: 0;top: 30px;
+                     border-radius: 8px;
+                     padding: 4px 2px;
+                     font-size: 18px;
+                     background-color: red;
+                       text-align: center;"
+                            >
+                            </div>
+                        </div>
+                    </div>
+                    <img
+                            style="height: 80px;width: 80px"
+                            src="image/world 2.png" alt="language" class=language>
+                </div>
+            </div>
 
+            <script>
+                const count1=document.getElementById("count1")
+                count1.innerText=co
+            </script>
+            <div style="display: flex;width: 1200px;justify-content: space-between">
+                <img src="icon/menu.png" height="80" width="80"/>
+                <div style="display: flex">
+                    <input  placeholder="Search..">
+                    <img src="image/image 18.png" alt="search icon" class="search">
+                </div>
+            </div>
+        </div>
+
+    </div>
     <div class="navigationbar">
         <ul>
             <li><a href=index.html>Home</a></li>
@@ -80,7 +132,7 @@
             <h6>Filter option</h6>
         </div>
         <div class="sort-button">
-            <h6>Price</h6>
+            <h6>price </h6>
             <img src="image/image 18 (1).png" alt="Sort Icon">
         </div>
         <img class="fliter" src="image/Group 145.png" alt="Grid Icon">

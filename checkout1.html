@@ -5,13 +5,18 @@
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple HTML Page</title>
+    <link rel="stylesheet" href="css/mobile-style.css">
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Arbutus&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
-</style>
+    @media (max-width: 410px) {
+        .popup {
+            top:800px;
+            left: 600px;
+        }
+    }
 </style>
 <body>
 <div>
@@ -37,10 +42,52 @@
         </div>
         <script>
             const count = document.getElementById("count")
-            count.innerText = 1
+            count.innerText = 0
         </script>
         <img src="image/world 2.png" alt="language" class=language>
     </div>
+</div>
+<div>
+    <div class="searchbar_mobile" >
+        <div style="display: flex;justify-content:space-between;width: 1200px;">
+            <a href="index.html">
+                <img style="height: 120px;width: 500px" src="image/shoptitle_300x@2x.avif" alt="logo" class="logo"></a>
+            <div style="display: flex">
+                <img src="image/user 2.png" style="height: 80px;width: 80px" alt="user" class="user">
+                <div class="cart-container">
+                    <div style="position: relative">
+                        <img src="image/cart (1) 2.png" style="height: 80px;width: 80px" alt="cart" class="cart">
+                        <div id="count1"
+                             style="position: absolute;
+                     right: 0;top: 30px;
+                     border-radius: 8px;
+                     padding: 4px 2px;
+                     font-size: 18px;
+                     background-color: red;
+                       text-align: center;"
+                        >
+                        </div>
+                    </div>
+                </div>
+                <img
+                        style="height: 80px;width: 80px"
+                        src="image/world 2.png" alt="language" class=language>
+            </div>
+        </div>
+
+        <script>
+            const count1 = document.getElementById("count1")
+            count1.innerText = 0
+        </script>
+        <div style="display: flex;width: 1200px;justify-content: space-between">
+            <img src="icon/menu.png" height="80" width="80"/>
+            <div style="display: flex">
+                <input  placeholder="Search..">
+                <img src="image/image 18.png" alt="search icon" class="search">
+            </div>
+        </div>
+    </div>
+
 </div>
 
 <div class="navigationbar">

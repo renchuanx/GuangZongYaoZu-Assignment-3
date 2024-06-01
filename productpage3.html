@@ -22,6 +22,14 @@
             text-align: center;
         }
 
+        body{
+            height: 2400px;
+        }      @media (max-width: 410px) {
+            .popup {
+                top:800px;
+                left: 600px;
+            }
+        }
         .tabs {
             display: flex;
         }
@@ -50,6 +58,7 @@
             display: block;
         }
     </style>
+    <link rel="stylesheet" href="css/mobile-style.css">
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
@@ -87,6 +96,48 @@
         <img src="image/world 2.png" alt="language" class=language>
     </div>
 </div>
+<div>
+    <div class="searchbar_mobile" >
+        <div style="display: flex;justify-content:space-between;width: 1200px;">
+            <a href="index.html">
+                <img style="height: 120px;width: 500px" src="image/shoptitle_300x@2x.avif" alt="logo" class="logo"></a>
+            <div style="display: flex">
+                <img src="image/user 2.png" style="height: 80px;width: 80px" alt="user" class="user">
+                <div class="cart-container">
+                    <div style="position: relative">
+                        <img src="image/cart (1) 2.png" style="height: 80px;width: 80px" alt="cart" class="cart">
+                        <div id="count1"
+                             style="position: absolute;
+                     right: 0;top: 30px;
+                     border-radius: 8px;
+                     padding: 4px 2px;
+                     font-size: 18px;
+                     background-color: red;
+                       text-align: center;"
+                        >
+                        </div>
+                    </div>
+                </div>
+                <img
+                        style="height: 80px;width: 80px"
+                        src="image/world 2.png" alt="language" class=language>
+            </div>
+        </div>
+
+        <script>
+            const count1 = document.getElementById("count1")
+            count1.innerText = 0
+        </script>
+        <div style="display: flex;width: 1200px;justify-content: space-between">
+            <img src="icon/menu.png" height="80" width="80"/>
+            <div style="display: flex">
+                <input  placeholder="Search..">
+                <img src="image/image 18.png" alt="search icon" class="search">
+            </div>
+        </div>
+    </div>
+
+</div>
 
 <div class="navigationbar">
     <ul>
@@ -100,6 +151,11 @@
 <div class="title">
     <p>Home / Best Seller / Nintendo Switch Console (Neon Red/ Blue)</p>
 </div>
+<div id="popup" class="popup">
+    <img style="margin: 10px 30px 0 50px;width: 120px;" src="icon/minimum.png"/>
+    <p/>
+    Minimum quantity 1
+</div>
 <div class="productdetail">
     <h3>Nintendo Switch Console (Neon Red/ Blue)</h3>
     <div class="productinfo1">
@@ -109,11 +165,6 @@
                 <p>Price:</p>
                 <h4>$977.99</h4>
 
-            </div>
-            <div id="popup" class="popup">
-                <img style="margin: 10px 30px 0 50px;width: 120px;" src="icon/minimum.png"/>
-                <p/>
-                Minimum quantity 1
             </div>
             <div id="popup-insufficient-inventory" class="popup">
                 <img style="margin: 10px 30px 0 35px;width: 120px;" src="icon/insufficient-inventory.png"/>
@@ -188,6 +239,94 @@
 
     </div>
 
+</div>
+<div class="productdetail-mobile">
+    <h3>Nintendo Switch Console (Neon Red/ Blue)</h3>
+    <div class="productinfo1">
+        <img src="image/product3.png" alt="Xbox One X">
+
+    </div>
+    <div class="detailpicture-mobile" style=" margin-top:20px; display: flex;">
+        <img src="image/detailed3.1.png" style="margin: 0 10px">
+        <img src="image/detailed3.2.png" style="margin: 0 10px">
+    </div>
+    <div class="Horizon">
+        <div class="price1">
+            <p>Price:</p>
+            <h4>$977.99</h4>
+
+        </div>
+
+        <div id="popup-insufficient-inventory1" class="popup">
+            <img style="margin: 10px 30px 0 35px;width: 120px;" src="icon/insufficient-inventory.png"/>
+            <p/>
+            Insufficient inventory
+        </div>
+        <div id="popup-informed1" class="popup">
+            <img style="margin: 10px 30px 0 35px;width: 120px;" src="icon/Informed.png"/>
+            <p/>
+            Informed
+        </div>
+        <div class="quantity-container1">
+            <p>Quantity:</p>
+            <div class="button">
+                <button id="decrease1" class="quantity-button decrease">▼</button>
+                <input type="number" id="quantity1" name="quantity" value="1" min="1">
+                <button id="increase1" class="quantity-button increase">▲</button>
+            </div>
+        </div>
+        <div class="cartandbuy1">
+            <img src="image/Star 20.png">
+            <button id="arrival-notification1" class="arrival-notification">ARRIVAL NOTIFICATION</button>
+            <script>
+                document.addEventListener('DOMContentLoaded', (event) => {
+                    const decreaseButton1 = document.getElementById('decrease1');
+                    const increaseButton1 = document.getElementById('increase1');
+                    const quantityInput1 = document.getElementById('quantity1');
+                    const arrivalNotification1 = document.getElementById('arrival-notification1');
+                    const popupInsufficientInventory1 = document.getElementById('popup-insufficient-inventory1');
+                    var popup = document.getElementById('popup');
+                    var popupInformed = document.getElementById('popup-informed');
+
+                    arrivalNotification1.addEventListener('click', () => {
+                        popupInformed.style.display = 'block';
+                        setTimeout(function () {
+                            popupInformed.style.display = 'none';
+                        }, 1500);
+                    })
+                    decreaseButton1.addEventListener('click', () => {
+                        let currentValue = parseInt(quantityInput1.value);
+                        if (currentValue > 1) {
+                            quantityInput1.value = currentValue - 1;
+                        } else {
+                            popup.style.display = 'block';
+                            setTimeout(function () {
+                                popup.style.display = 'none';
+                            }, 1500);
+                        }
+                    });
+
+                    increaseButton1.addEventListener('click', () => {
+                        let currentValue = parseInt(quantityInput1.value);
+                        popupInsufficientInventory1.style.display = 'block';
+                        setTimeout(function () {
+                            popupInsufficientInventory1.style.display = 'none';
+                        }, 1500);
+                    });
+                });
+
+            </script>
+        </div>
+        <img id="icons1" src="image/shared icon.png">
+        <div class="submit-email">
+            <p>Enter your email<br>
+                to receive restock notifications</p>
+            <input type="email" placeholder="Your email"><br>
+            <button>submit</button>
+            <h3 style="width: 320px"><a href=index.html>Continue shopping</a></h3>
+        </div>
+
+    </div>
 </div>
 <div class="detailpicture">
     <img src="image/detailed3.1.png">

@@ -21,7 +21,12 @@
             z-index: 1000;
             text-align: center;
         }
-
+        @media (max-width: 410px) {
+            .popup {
+                top:800px;
+                left: 600px;
+            }
+        }
         .tabs {
             display: flex;
         }
@@ -35,7 +40,9 @@
             background-color: #007bff;
             color: white;
         }
-
+        body{
+            height: 1750px;
+        }
         .tab {
             background-color: #f1f1f1;
             color: black;
@@ -50,6 +57,7 @@
             display: block;
         }
     </style>
+    <link rel="stylesheet" href="css/mobile-style.css">
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
@@ -59,8 +67,7 @@
 </style>
 </style>
 <body>
-<header>
-
+<div>
     <div class="searchbar">
         <a href="index.html"><img src="image/shoptitle_300x@2x.avif" alt="logo" class="logo"></a>
         <input type="text" placeholder="Search..">
@@ -71,7 +78,7 @@
                 <img src="image/cart (1) 2.png" alt="cart" class="cart">
                 <div id="count"
                      style="position: absolute;
-                     right: 0;top: 40px;
+                     right: 0;top: 30px;
                      border-radius: 8px;
                      padding: 2px 1px;
                      font-size: 14px;
@@ -82,25 +89,71 @@
             </div>
         </div>
         <script>
-            const count=document.getElementById("count")
-            count.innerText=0
+            const count = document.getElementById("count")
+            count.innerText = 0
         </script>
         <img src="image/world 2.png" alt="language" class=language>
     </div>
+</div>
+<div>
+    <div class="searchbar_mobile">
+        <div style="display: flex;justify-content:space-between;width: 1200px;">
+            <a href="index.html">
+                <img style="height: 120px;width: 500px" src="image/shoptitle_300x@2x.avif" alt="logo" class="logo"></a>
+            <div style="display: flex">
+                <img src="image/user 2.png" style="height: 80px;width: 80px" alt="user" class="user">
+                <div class="cart-container">
+                    <div style="position: relative">
+                        <img src="image/cart (1) 2.png" style="height: 80px;width: 80px" alt="cart" class="cart">
+                        <div id="count1"
+                             style="position: absolute;
+                     right: 0;top: 30px;
+                     border-radius: 8px;
+                     padding: 4px 2px;
+                     font-size: 18px;
+                     background-color: red;
+                       text-align: center;"
+                        >
+                        </div>
+                    </div>
+                </div>
+                <img
+                        style="height: 80px;width: 80px"
+                        src="image/world 2.png" alt="language" class=language>
+            </div>
+        </div>
 
-    <div class="navigationbar">
-        <ul>
-            <li><a href=index.html>Home</a></li>
-            <li>Games</li>
-            <li>Consoles</li>
-            <li>Other</li>
-            <li>Contact us</li>
-        </ul>
+        <script>
+            const count1 = document.getElementById("count1")
+            count1.innerText = 0
+        </script>
+        <div style="display: flex;width: 1200px;justify-content: space-between">
+            <img src="icon/menu.png" height="80" width="80"/>
+            <div style="display: flex">
+                <input placeholder="Search..">
+                <img src="image/image 18.png" alt="search icon" class="search">
+            </div>
+        </div>
     </div>
 
-</header>
+</div>
+
+<div class="navigationbar">
+    <ul>
+        <li><a href=index.html>Home</a></li>
+        <li>Games</li>
+        <li>Consoles</li>
+        <li>Other</li>
+        <li>Contact us</li>
+    </ul>
+</div>
 <div class="title">
     <p>Home / Best Seller / Xbox One X</p>
+</div>
+<div id="popup" class="popup">
+    <img style="margin: 10px 30px 0 50px;width: 120px;" src="icon/minimum.png"/>
+    <p/>
+    Minimum quantity 1
 </div>
 <div class="productdetail">
     <h3>Xbox One X (CYV-00015)</h3>
@@ -110,11 +163,6 @@
             <div class="price">
                 <p>Price:</p>
                 <h4>$977.99</h4>
-            </div>
-            <div id="popup" class="popup">
-                <img style="margin: 10px 30px 0 50px;width: 120px;" src="icon/minimum.png"/>
-                <p/>
-                Minimum quantity 1
             </div>
             <div class="quantity-container">
                 <p>Quantity:</p>
@@ -156,6 +204,65 @@
             </div>
             <img id="icons" src="image/shared icon.png">
         </div>
+
+    </div>
+
+</div>
+<div class="productdetail-mobile">
+    <h3>Xbox One X (CYV-00015)</h3>
+    <div class="productinfo">
+        <img src="image/product1.png" alt="Xbox One X">
+
+    </div>
+    <div class="detailpicture-mobile" style=" margin-top:20px; display: flex;">
+        <img src="image/detail1.png" style="margin: 0 10px">
+        <img src="image/detail2.png" style="margin: 0 10px">
+    </div>
+    <div class="Horizon">
+        <div class="price">
+            <p>Price:</p>
+            <h4>$977.99</h4>
+        </div>
+
+        <div class="quantity-container">
+            <p>Quantity:</p>
+            <div class="button">
+                <button id="decrease1" class="quantity-button decrease">▼</button>
+                <input type="number" id="quantity1" name="quantity" value="1" min="1">
+                <button id="increase1" class="quantity-button increase">▲</button>
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', (event) => {
+                        const decreaseButton1 = document.getElementById('decrease1');
+                        const increaseButton1 = document.getElementById('increase1');
+                        const quantityInput1 = document.getElementById('quantity1');
+                        var popup = document.getElementById('popup');
+                        decreaseButton1.addEventListener('click', () => {
+                            let currentValue = parseInt(quantityInput1.value);
+                            if (currentValue > 1) {
+                                quantityInput1.value = currentValue - 1;
+                            } else {
+                                popup.style.display = 'block';
+                                setTimeout(function () {
+                                    popup.style.display = 'none';
+                                }, 1500);
+                            }
+                        });
+
+                        increaseButton1.addEventListener('click', () => {
+                            let currentValue = parseInt(quantityInput1.value);
+                            quantityInput1.value = currentValue + 1;
+                        });
+                    });
+
+                </script>
+            </div>
+        </div>
+        <div class="cartandbuy">
+            <img src="image/Star 20.png">
+            <button class="add-to-cart"><a href=checkout1.html>ADD TO CART</a></button>
+        </div>
+        <img id="icons" src="image/shared icon.png">
     </div>
 
 </div>
@@ -168,7 +275,7 @@
     <button class="tab" onclick="showContent('product-detail')">Product Detail</button>
     <button class="tab" onclick="showContent('warranty-info')">Warranty Information</button>
 </div>
-<div style="display:flex;margin-top: 100px;margin-left:150px;">
+<div class="tabs—content">
     <div id="description" class="content active">
         <h2>Description</h2>
         <p>This is the description content.</p>
