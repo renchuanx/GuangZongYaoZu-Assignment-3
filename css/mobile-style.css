@@ -49,68 +49,7 @@
         box-sizing: border-box;
     }
 
-    .filter-button {
-        display: flex;
-        width: 80rem;
-        height: 5rem;
-        border-radius: 0.3125rem;
-        background: linear-gradient(180deg, #E7E6E6 0%, #FEFDFD 100%);
-    
-    }
-    .filter-button h6{
-        width: 30rem;
-        height: 5rem;
-        display:center;
-        margin-left:350px;
-        color: #000;
-        font-family: Inter;
-        font-size: 3rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-
-    }
-    .filter-button img{
-        margin-left: 20px;
-        width: 5rem;
-        height: 4rem;
-
-
-    }
-    .sort-button {
-        margin-top: 40px;
-        margin-left: 0px;
-        display: flex;
-        width: 20rem;
-        height: 4rem;
-        border-radius: 0.3125rem;
-        background: linear-gradient(180deg, #E7E6E6 0%, #FEFDFD 100%);
-    }
-    
-    .sort-button h6 {
-        position: absolute;
-        left: 100px;
-        width: 9.30719rem;
-        height: 2.1875rem;
-        color: #000;
-        font-family: Inter;
-        font-size: 1.8rem;
-    
-    }
-    .sort-button img {
-        margin-left: 20px;
-        width: 4rem;
-        height: 3rem;
-    
-    }
    
-    .title .fliter{
-        display: flex;
-
-        margin-top: 40px;
-        margin-left: 800px;
-
-    }
     .banner_mobile ul {
         width: 30px;
         margin: 0 auto;
@@ -203,9 +142,20 @@
     }
 
     .existing-customer .customer-info {
+       
         font-size: 20px;
     }
 
+   .customer-info p{
+        
+        color: #000;
+        font-family:Inter;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1rem;
+
+    }
     .existing-customer .edit {
         font-size: 26px;
     }
@@ -290,11 +240,11 @@
 
     .confrimation .confirme-icon {
         margin-top: 70px;
-        margin-left: 550px;
+        margin-left: 350px;
     }
 
     .con-product2, .con-product1 {
-        margin-left: 320px;
+        margin-left: 100px;
     }
 
     .con-product2 h4 {
@@ -310,8 +260,10 @@
     }
 
     .confrimation {
-        width: 1200px;
-        height: 900px;
+        margin-left: 200px;
+        display: center;
+        width: 50rem;
+        height: 55rem;
     }
 
     .detailed-info-con {
@@ -339,7 +291,7 @@
         height: 78px;
         border-radius: 0.3125rem;
         background: #072865;
-        margin-left: 320px;
+        margin-left: 0px;
         margin-top: 60px;
     }
 
@@ -447,6 +399,9 @@
         line-height: normal;
 
     }
+    .productdetail-mobile{
+        display:block;
+    }
     
     .pagination {
         width: 1100px;
@@ -475,31 +430,43 @@
            margin-left: 70px;
             width: 65rem;
             height:70rem;
-    
-    
         
     }
 
-    .productdetail-mobile .productinfo1 {
-        flex-wrap: wrap;
+    .productdetail-mobile .productinfo1 img{
+        margin-left: 40px;
+            width: 70rem;
+            height:75rem;
     }
 
-    .productdetail-mobile .productinfo1 img {
-        width: 1160px;
-
-    }
 
 
     .Horizon .price {
-        margin-left: 300px;
+        margin-left: 100px;
         display: flex;
         font-size: 48px;
         width: 500px;
         justify-content: space-between;
     }
+    .Horizon .price h4 {
+        margin-left: 700px;
+        
+    }
+
+    .Horizon .price1 {
+        margin-left: 100px;
+        display: flex;
+        font-size: 48px;
+        width: 500px;
+        justify-content: space-between;
+    }
+    .Horizon .price1 h4 {
+        margin-left: 700px;
+        
+    }
 
     .quantity-container {
-        margin-left: 300px;
+        margin-left: 100px;
         display: flex;
         font-size: 48px;
         width: 500px;
@@ -507,10 +474,19 @@
     }
 
     .quantity-container1 {
+        margin-left: 100px;
         display: flex;
         font-size: 48px;
-        width: 1100px;
+        width: 500px;
         justify-content: space-between;
+    }
+    .quantity-container1 p{
+        margin-right: 650px;
+        
+    }
+    .quantity-container p{
+        margin-right: 650px;
+        
     }
 
     .quantity-container .button {
@@ -521,23 +497,27 @@
         margin: 20px 0;
     }
 
-    
-
     .cartandbuy {
-        margin-left: 100px;
+        margin-left: 50px;
         display: flex;
         font-size: 48px;
         
     }
-    
 
     .cartandbuy1 {
+        margin-top: 80px;
+        margin-left: 50px;
         display: flex;
         font-size: 48px;
-        width: 1100px;
-        justify-content: space-between;
     }
-
+    .cartandbuy1 img{
+       margin-right: 250px;
+    }
+    .cartandbuy img{
+        width: 5rem;
+        height: 5rem;
+       margin-right: 100px;
+     }
     .add-to-cart {
         margin: 0;
     }
@@ -546,35 +526,76 @@
         margin: 0;
     }
 
-    .cartandbuy1 img {
-        margin-left: 30px;
+    .submit-email{
+        margin-top: 100px;
     }
 
+    .submit-email p{
+
+    
+    width: 30rem;
+    height: 3rem;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+
+
+    }
+   
+    .submit-email input{
+    font-size: 2rem;
+    margin-left: 100px;
+    margin-top: 70px;
+    width: 50rem;
+    height:3rem;
+    align-items: center;
+
+    }
+
+    .submit-email button{
+    color: #000;
+    font-family: Inder;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.75rem; /* 85.714% */
+    margin-left: 350px;
+     display: inline-flex;
+     width: 20rem;
+    height:4rem;
+    justify-content: center;
+    align-items: center;
+    }
+    
     .cartandbuy .add-to-cart {
-        width: 25.6455rem;
-        height: 5.0625rem;
-        margin-left: 220px;
+        width: 40rem;
+        height: 6rem;
+        font-size: 2.2rem;
     }
 
-    .cartandbuy1 .add-to-cart {
+    .cartandbuy1 .arrival-notification {
+        width: 40rem;
+        height: 6rem;
         margin-left: 220px;
+        font-size: 2.2rem;
     }
 
     #icons {
-        margin-left: 680px;
+        margin-left: 850px;
         width: 220px;
         height: 42px;
       
     }
-
     #icons1 {
-        width: 200px;
+        margin-left: 850px;
+        width: 220px;
         height: 42px;
-        float: right;
     }
 
     .tabs {
-        
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -587,9 +608,8 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-
-
     }
+
     .tabs button{
         width: 19.375rem;
         height: rem;
@@ -657,10 +677,13 @@
     }
 
     .top-reviewed-items h4 {
+        margin-left: 0px;
         font-size: 32px;
     }
 
     .top-reviewed-items {
+        margin-left: 23px;
+        display: center;
         padding: 0 50px;
         box-sizing: border-box;
     }
@@ -687,14 +710,6 @@
         display: none;
     }
 
-    .submit-email {
-        margin: 100px auto;
-    }
-
-    .submit-email h3 {
-        margin-left: 20px;
-    }
-
     .order-item span {
         font-size: 28px !important;
     }
@@ -714,5 +729,30 @@
     }
     .footer{
         margin-left: 30px;
+    }
+    .place-order{
+
+        color: #FFF;
+   
+        font-family:inder;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+    }
+    .input_email_submit{
+        font-size: 2rem;
+        color: #FFF;
+        font-family: Inter;
+        font-weight: 600;
+        line-height: normal;
+        margin-left: 80px;
+        display:center;
+        width: 60rem;
+        height: 4rem;   
+        border-radius: 0.1875rem;
+        background: #072865;
+
     }
 }
