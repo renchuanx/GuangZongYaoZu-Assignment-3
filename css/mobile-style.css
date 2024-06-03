@@ -1,14 +1,28 @@
 @media (max-width: 410px) {
+    body{
+        margin-left: 10px;
+    }
     .navigationbar {
         display: none;
     }
-
+    .searchbar_mobile{
+        display: block;
+    }
+   
+    .banner_mobile{
+        display: block;
+    }
     .banner {
         display: none;
     }
-
+    
     .searchbar {
         display: none;
+    }
+    .searchbar-mo input{
+        margin-left: 20px;
+        width: 65rem;
+        height: 4.2rem;
     }
     .searchbar_mobile{
         width: 1160px !important;
@@ -20,7 +34,7 @@
         padding: 0 20px !important;
         box-sizing: border-box ;
     }
-
+    
     .banner_mobile {
         width: 1200px;
         height: auto;
@@ -35,6 +49,68 @@
         box-sizing: border-box;
     }
 
+    .filter-button {
+        display: flex;
+        width: 80rem;
+        height: 5rem;
+        border-radius: 0.3125rem;
+        background: linear-gradient(180deg, #E7E6E6 0%, #FEFDFD 100%);
+    
+    }
+    .filter-button h6{
+        width: 30rem;
+        height: 5rem;
+        display:center;
+        margin-left:350px;
+        color: #000;
+        font-family: Inter;
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+    }
+    .filter-button img{
+        margin-left: 20px;
+        width: 5rem;
+        height: 4rem;
+
+
+    }
+    .sort-button {
+        margin-top: 40px;
+        margin-left: 0px;
+        display: flex;
+        width: 20rem;
+        height: 4rem;
+        border-radius: 0.3125rem;
+        background: linear-gradient(180deg, #E7E6E6 0%, #FEFDFD 100%);
+    }
+    
+    .sort-button h6 {
+        position: absolute;
+        left: 100px;
+        width: 9.30719rem;
+        height: 2.1875rem;
+        color: #000;
+        font-family: Inter;
+        font-size: 1.8rem;
+    
+    }
+    .sort-button img {
+        margin-left: 20px;
+        width: 4rem;
+        height: 3rem;
+    
+    }
+   
+    .title .fliter{
+        display: flex;
+
+        margin-top: 40px;
+        margin-left: 800px;
+
+    }
     .banner_mobile ul {
         width: 30px;
         margin: 0 auto;
@@ -271,6 +347,7 @@
         padding: 20px;
         box-sizing: border-box;
     }
+   
 
     .listproducts {
         width: 1200px;
@@ -345,7 +422,7 @@
         height: 0.5625rem;
         color: #FFF;
         font-family: Inter;
-        font-size: 0.7rem;
+        font-size: 1.3rem;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
@@ -370,7 +447,7 @@
         line-height: normal;
 
     }
-
+    
     .pagination {
         width: 1100px;
         display: flex;
@@ -394,7 +471,13 @@
     }
 
     .productdetail-mobile .productinfo img {
-        width: 1160px;
+        
+           margin-left: 70px;
+            width: 65rem;
+            height:70rem;
+    
+    
+        
     }
 
     .productdetail-mobile .productinfo1 {
@@ -408,31 +491,18 @@
 
 
     .Horizon .price {
+        margin-left: 300px;
         display: flex;
         font-size: 48px;
-        width: 1100px;
+        width: 500px;
         justify-content: space-between;
-    }
-
-    .Horizon .price1 {
-        display: flex;
-        font-size: 48px;
-        width: 1100px;
-        justify-content: space-between;
-    }
-
-    .Horizon .price h4 {
-        margin-left: 220px;
-    }
-
-    .Horizon .price1 h4 {
-        margin-left: 220px;
     }
 
     .quantity-container {
+        margin-left: 300px;
         display: flex;
         font-size: 48px;
-        width: 1100px;
+        width: 500px;
         justify-content: space-between;
     }
 
@@ -451,16 +521,15 @@
         margin: 20px 0;
     }
 
-    .cartandbuy img {
-        margin-left: 30px;
-    }
+    
 
     .cartandbuy {
+        margin-left: 100px;
         display: flex;
         font-size: 48px;
-        width: 1100px;
-        justify-content: space-between;
+        
     }
+    
 
     .cartandbuy1 {
         display: flex;
@@ -482,6 +551,8 @@
     }
 
     .cartandbuy .add-to-cart {
+        width: 25.6455rem;
+        height: 5.0625rem;
         margin-left: 220px;
     }
 
@@ -490,9 +561,10 @@
     }
 
     #icons {
-        width: 200px;
+        margin-left: 680px;
+        width: 220px;
         height: 42px;
-        float: right;
+      
     }
 
     #icons1 {
@@ -502,25 +574,71 @@
     }
 
     .tabs {
+        
         flex-wrap: wrap;
         justify-content: center;
     }
+    .tabs .tab{
+        
+        margin-top: 20px;
+        color: #000;
+        font-family: Inter;
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
 
+
+    }
+    .tabs button{
+        width: 19.375rem;
+        height: rem;
+
+    }
+    .tabactive{
+        color: #EFEEEE;
+        border-radius: 1rem;
+        background-color: #072865;
+        width: 24rem;
+        font-size: 150%;
+        height: 3rem;
+        font-family: Inter;
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
     .tab, .tabactive {
+        
+        margin-top: 20px;
         width: 1100px !important;
         height: 48px !important;
+  
     }
 
-    .content {
+    .tabs-content {
+        text-align: center;
         padding: 0 50px;
         box-sizing: border-box;
     }
-
     .description {
+        margin-left: 40px;
+        text-align: center;
+    }
+    .description p{
+        margin-left: 60px;
+        text-align: center;
+    }
+    #description {
+        margin-left: 80px;
+        text-align: center;
         padding: 0 50px;
         box-sizing: border-box;
     }
-
+    #product-detail {
+        text-align: center;
+       
+    }
     .related-products h4 {
         font-size: 32px;
     }
@@ -548,6 +666,7 @@
     }
 
     .review {
+        margin-left: 50px;
         padding: 0 50px;
         box-sizing: border-box;
         width: 1100px;
@@ -593,64 +712,7 @@
     .totals{
         display: none;
     }
-}
-
-@media (min-width: 410px) {
-    .totals-mobile{
-        display: none;
+    .footer{
+        margin-left: 30px;
     }
-    .detailed-info-con-mobile {
-        display: none;
-    }
-
-    .detailpicture {
-        display: none;
-    }
-
-    .productdetail-mobile {
-        display: none;
-    }
-
-    .searchbar_mobile {
-        display: none;
-    }
-
-    .detailed-info {
-        display: none;
-    }
-
-    .banner_mobile {
-        display: none;
-    }
-
-    .order-summary-mobile {
-        display: none;
-    }
-}
-
-.searchbar_mobile {
-    padding: 0px;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-}
-
-
-.searchbar_mobile input {
-    box-sizing: border-box;
-    width: 1000px;
-    height: 80px;
-    background: #FFFFFF;
-    border: 2px solid #FFFFFF;
-    border-bottom-left-radius: 4px;
-    border-top-left-radius: 4px;
-    font-size: 20px;
-
-}
-
-.searchbar_mobile div .search {
-    width: 80px;
-    height: 80px;
-    background-color: white;
-    border-bottom-right-radius: 4px;
-    border-top-right-radius: 4px;
 }

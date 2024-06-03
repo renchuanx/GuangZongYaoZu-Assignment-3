@@ -19,8 +19,14 @@ body {
     height: 80px;
 
 }
+.searchbar_mobile{
+    display:none;
 
 
+}
+.banner_mobile{
+    display: none;
+}
 .searchbar input[type=text] {
     box-sizing: border-box;
     margin-top: 30px;
@@ -567,7 +573,7 @@ a {
 }
 
 .title h3 {
-    text-align: center;
+  
     color: #FFF;
     font-family: Arbutus;
     font-size: 2.5rem;
